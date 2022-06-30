@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* common */
+.container {max-width: 1370px;}
+.clearfix:after{display:block; content: ''; clear:both; height:0; font-size:0; visibility:hidden;}
+.blind{position:absolute; top:0; left:0; width:1px; height:1px; font-size:0; line-height:0; overflow:hidden;}
+
+
+/* header */
+
+
+
+/* footer */
+
+
+
+
+
+@media screen and (max-width:991px) {
+
+}
+
+@media screen and (max-width:720px) {
+
+}
+
+@media screen and (max-width:480px) {
+
+}
