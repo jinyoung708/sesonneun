@@ -1,27 +1,137 @@
 @charset "UTF-8";
 
 /* common */
-.container {max-width: 1370px;}
+* {box-sizing: border-box; letter-spacing: -0.025em;}
+.container {max-width: 1280px; margin: 0 auto;}
 .clearfix:after{display:block; content: ''; clear:both; height:0; font-size:0; visibility:hidden;}
 .blind{position:absolute; top:0; left:0; width:1px; height:1px; font-size:0; line-height:0; overflow:hidden;}
+img {max-width: 100%;}
+.m_hide {display: block;}
+.pc_hide {display: none;}
 
 
 /* header */
-
-
+#header {position: relative; z-index: 999; border-bottom: 3px solid #ebebeb;}
+#header .container {position: relative; height: 146px; padding-top: 72px;}
+#header .logo {position: absolute; left: 0; top: 56px; font-size: 0;}
+#header .gnb_box .gnb {float: right;}
+#header .gnb_box .gnb > li {float: left; position: relative; }
+#header .gnb_box .gnb > li > a {display: inline-block; padding: 0 23px; height: 74px; font-size: 22px; font-weight: 500;}
+#header .gnb_box .gnb > li:last-child > a {padding-right: 0;}
+#header .gnb_box .gnb > li:hover .sub_gnb {height: auto; visibility: visible; overflow: visible; opacity: 1;}
+#header .gnb_box .gnb .sub_gnb {height: 0; visibility: hidden; opacity: 0; overflow: hidden; position: absolute; left: 50%; top: 100%; width: 252px; border: 1px solid #d1d3d4; border-top: 3px solid #d3d000; transform: translateX(-50%); box-shadow: 6px 3px 2.7px 0.3px rgba(209, 211, 212, 1); background-color: #fff; text-align: center; transition: opacity 0.3s;}
+#header .gnb_box .gnb > li:last-child .sub_gnb {margin-left: 23px;}
+#header .gnb_box .gnb .sub_gnb > li {border-bottom: 1px solid #d1d3d4;}
+#header .gnb_box .gnb .sub_gnb > li > a {display: block; height: 56px; font-size: 18px; transition: all 0.3s;}
+#header .gnb_box .gnb .sub_gnb > li:hover > a {color: #fff; background-color: #acacac;}
+#header .gnb_box .gnb .sub_gnb > li > a::after {display: inline-block; content:''; width: 0; height: 100%; vertical-align: middle;}
+#header .gnb_box .gnb .sub_gnb::before {display: inline-block; content:''; position: absolute; left: 50%; top: -11px; width: 20px; height: 11px; margin-left: -10px; background: url('../images/common/ico_gnb_hover.png') no-repeat center;}
+#header .util_btn_box {position: absolute; right: 0; top: 19px; font-size: 0;}
+#header .util_btn_box a {display: inline-block; height: 35px; line-height: 31px; padding: 0 10px; margin-left: 10px; border: 2px solid #d3d000; border-radius: 33px; font-size: 14px; font-weight: 500; text-align: center;}
+#header .util_btn_box a:first-child {margin-left: 0;}
+#header .util_btn_box .login_btn {min-width: 102px; font-size: 15px; font-weight: 700; color: #fff; background-color: #d3d000;}
+#header .util_btn_box .service_btn {min-width: 202px;}
+#header .m_gnb_open, #header .m_gnb_top, #header .m_gnb {display: none;}
 
 /* footer */
+#footer {background-color: #444041;}
+#footer .container {position: relative; min-height: 309px; }
+#footer .logo {position: absolute; left: 55px; top: 77px;}
+#footer .tel_box {position: absolute; left: 55px; top: 150px; line-height: 1.2; color: #fff; font-size: 20px; font-weight: 300;}
+#footer .tel_box strong {display: block; font-size: 40px; font-weight: 700;}
+#footer .info_list {float: right; max-width: 690px; margin-top: 70px; font-size: 0;}
+#footer .info_list > li {display: inline-block; position: relative; padding-right: 48px; margin-left: 48px; font-size: 20px; font-weight: 300; color: #fff;}
+#footer .info_list > li::after {display: inline-block; content:'I'; position: absolute; right: 0; top: 0;}
+#footer .info_list > li:nth-child(2n+1) {margin-left: 0;}
+#footer .info_list > li:nth-child(2n) {padding-right: 0;}
+#footer .info_list > li:nth-child(2n)::after {display: none;}
+#footer .link_list {float: right; clear: both; margin-top: 45px; margin-right: 56px; font-size: 0;}
+#footer .link_list > li {display: inline-block; margin-right: 16px;}
+#footer .link_list > li:last-child {margin-right: 0;}
+#footer .link_list > li a {display: block; width: 152px; height: 38px; line-height: 36px; border: 1px solid #fff; color: #fff; font-size: 15px; text-align: center;}
 
 
 
+@media screen and (max-width:1200px) {
+    .m_hide {display: none;}
+    .pc_hide {display: block;}
 
+    #header {border-bottom: 0;}
+    #header .util_btn_box {display: none;}
+    #header .container {height: 102px; padding-top: 0;}
+    #header .logo {left: 50%; top: 30px; transform: translateX(-50%); width: 300px;}
+    #header .m_gnb_open {display: block; position: absolute; left: 20px; top: 32px; font-size: 0;}
+    #header .gnb_box {position: fixed; left: -200%; z-index: 999; max-width: 559px; width: 100%; max-height: 100%; padding-bottom: 70px; overflow-y: auto; border-top: 8px solid #d3d000; box-shadow: 6px 6px 3px 0px rgba(172, 172, 172, 1); background-color: #f8f8f8; transition: left 0.3s;}
+    #header .gnb_box.show {left: 0;}
+    #header .gnb_box .login_box {height: 87px; padding: 52px 68px 0;}
+    #header .gnb_box .login_box a {display: inline-block; margin-right: 35px; font-size: 15px; font-weight: 300; color: #363636; letter-spacing: -0.04em;}
+    #header .gnb_box .info_box {background-color: #ececec; text-align: center; font-size: 0;}
+    #header .gnb_box .info_box a {display: inline-block; position: relative; padding: 31px 35px 0; height: 102px; font-size: 25px; font-weight: 500; letter-spacing: -0.05em;}
+    #header .gnb_box .info_box a::after {display: inline-block; content:''; position: absolute; right: 0; top: 50%; width: 2px; height: 47px; margin-top: -23.5px; background-color: #fff;}
+    #header .gnb_box .info_box a:last-child::after {display: none;}
+    #header .gnb_box .info_box a small {display: inline-block; margin-top: -2px; font-size: 15px; vertical-align: middle;}
+    #header .gnb_box .info_box a span {display: inline-block; vertical-align: middle; margin-top: -5px;}
+    #header .gnb_box .info_box a .ico01 {width: 35px; height: 33px; margin-right: 12px; background: url('../images/common/m_ico_util_btn01.png') no-repeat center/contain;}
+    #header .gnb_box .info_box a .ico02 {width: 30px; height: 34px; margin-right: 11px; background: url('../images/common/m_ico_util_btn02.png') no-repeat center/contain;}
+    #header .gnb_box .gnb {display: none;}
+    #header .gnb_box .m_gnb {padding: 0 47px; margin-top: 25px;}
+    #header .gnb_box .m_gnb > li {border-bottom: 1px solid #d1d3d4;}
+    #header .gnb_box .m_gnb > li > a {display: block; height: 76px; padding: 0 20px; background: url('../images/common/m_ico_gnb_hover.png') no-repeat right 26px center; font-size: 21px; font-weight: 500;}
+    #header .gnb_box .m_gnb > li > a::after {display: inline-block; content:''; width: 0; height: 100%; vertical-align: middle;}
+    #header .gnb_box .m_gnb .sub_gnb {display: none; padding: 0 21px; border-top: 3px solid #d3d000; background-color: #fff;}
+    #header .gnb_box .m_gnb .sub_gnb::after {display: block; content:''; clear: both;}
+    #header .gnb_box .m_gnb .sub_gnb > li {width: calc(50% - 16px); border-bottom: 1px solid #d1d3d4;}
+    #header .gnb_box .m_gnb .sub_gnb > li.active {border-bottom: 0;}
+    #header .gnb_box .m_gnb .sub_gnb > li:nth-child(odd) {float: left;}
+    #header .gnb_box .m_gnb .sub_gnb > li:nth-child(even) {float: right;}
+    #header .gnb_box .m_gnb .sub_gnb > li:nth-child(odd):nth-last-of-type(2),
+    #header .gnb_box .m_gnb .sub_gnb > li:last-child {border-bottom: 0;}
+    #header .gnb_box .m_gnb .sub_gnb > li > a {display: block; height: 57px; padding: 0 35px; font-size: 18px; font-weight: 300; color: #363636;}
+    #header .gnb_box .m_gnb .sub_gnb > li > a::after {display: inline-block; content:''; width: 0; height: 100%; vertical-align: middle;}
+    #header .gnb_box .m_logo {display: block; margin-top: 70px; text-align: center;}
+    #header .m_gnb, #header .m_gnb_top {display: block;}
+    #header .m_gnb_close {position: absolute; right: 49px; top: 45px; font-size: 0;}
 
-@media screen and (max-width:991px) {
-
+    #footer .container {min-height: inherit;}
+    #footer .logo {left: 39px; top: 40px;}
+    #footer .tel_box {left: auto; right: 44px; top: auto; bottom: 95px; font-size: 16px; text-align: right;}
+    #footer .tel_box strong {font-size: 35px;}
+    #footer .info_list {float: none; max-width: inherit; margin-top: 0; padding: 145px 40px 0;}
+    #footer .info_list > li {display: block; margin-left: 0; padding-right: 0; font-size: 16px;}
+    #footer .info_list > li::after {display: none;}
+    #footer .link_list {float: none; width: 100%; margin-top: 20px; padding: 0 40px 39px;}
+    #footer .link_list > li {width: calc(25% - 12px);}
+    #footer .link_list > li a {width: 100%; font-size: 13px;}
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:640px) {
+    #header .container {height: 61.2px;}
+    #header .logo {width: 180px; top: 18px;}
+    #header .m_gnb_open {left: 12px; top: 20px; width: 19px;}
+    #header .gnb_box .login_box {height: 65px; padding: 32px 40px 0;}
+    #header .m_gnb_close {right: 30px; top: 28px; width: 20px;}
+    #header .gnb_box {padding-bottom: 42px;}
+    #header .gnb_box .login_box a {margin-right: 20px;}
+    #header .gnb_box .info_box a {height: 62px; font-size: 17px; padding: 18px 21px 0;}
+    #header .gnb_box .info_box a::after {height: 30px; margin-top: -15px;}
+    #header .gnb_box .info_box a small {font-size: 13px;}
+    #header .gnb_box .info_box a .ico01 {width: 21px;}
+    #header .gnb_box .info_box a .ico02 {width: 18px;}
+    #header .gnb_box .m_gnb {padding: 0 28px; margin-top: 15px;}
+    #header .gnb_box .m_gnb > li > a {height: 60px; padding: 0 12px; font-size: 18px; background-position: right 15px center; background-size: 17px;}
+    #header .gnb_box .m_gnb .sub_gnb {padding: 0 12px;}
+    #header .gnb_box .m_gnb .sub_gnb > li > a {height: 50px; padding: 0 20px; font-size: 15px;}
+    #header .gnb_box .m_logo {margin-top: 42px;}
 
+    #footer .logo {left: 20px; top: 40px;}
+    #footer .info_list {padding: 100px 20px 0;}
+    #footer .info_list > li {font-size: 14px;}
+    #footer .tel_box {font-size: 14px; right: 20px; bottom: 168px;}
+    #footer .tel_box strong {font-size: 20px;}
+    #footer .link_list {padding: 0 20px 60px;}
+    #footer .link_list > li {width: calc(50% - 5px); margin-right: 10px;}
+    #footer .link_list > li:nth-child(2n) {margin-right: 0; margin-top: 10px;}
+    #footer .link_list > li:nth-child(-n+2) {margin-top: 0;}
 }
 
 @media screen and (max-width:480px) {

@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
+    <meta charset=UTF-8">
+    <link rel="canonical" href="http://페이지 주소">
+    <meta name="description" content="웹페이지 설명 작성"/>
+    <meta name="keywords" content="키워드, 키워드..." />
+    <meta name="author" content="페이지 작성자" />
+    <meta name="copyright" content="저작권자" />
+    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="All" /> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>세솟는병원</title>
     <link rel="stylesheet" href="../../assets/css/default.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script> 
+    <![endif]-->
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 </head>
 <body>
@@ -14,66 +28,89 @@
     <div id="wrap">
         <!-- header -->
         <header id="header">
-            <div class="container">
-                <h1 class="logo"><a href="#">세솟는병원</a></h1>
-                <ul class="gnb">
-                    <li>
-                        <a href="../aboutUs/mission-vision.html">병원소개</a>
-                        <ul class="sub_gnb">
-                            <li><a href="../aboutUs/mission-vision.html">미션&비젼</a></li>
-                            <li><a href="../aboutUs/symbol.html">병원CI</a></li>
-                            <li><a href="../aboutUs/history.html">병원의역사</a></li>
-                            <li><a href="../aboutUs/medical-staff.html">의료진소개</a></li>
-                            <li><a href="../aboutUs/greetings.html">인사말</a></li>
-                            <li><a href="../aboutUs/ourmap.html">찾아오시는길</a></li>
-                            <li><a href="../aboutUs/floor.html">층별안내</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../medicalGuidance/ward-room-guide.html">진료안내</a>
-                        <ul class="sub_gnb">
-                            <li><a href="../medicalGuidance/ward-room-guide.html">병실생활안내</a></li>
-                            <li><a href="../medicalGuidance/document-issuance-information.html">서류발급안내</a></li>
-                            <li><a href="../medicalGuidance/admission-discharge.html">입퇴원안내</a></li>
-                            <li><a href="../medicalGuidance/timetable.html">진료시간표</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../spineCenter/waist-clinic.html">척추센터</a>
-                        <ul class="sub_gnb">
-                            <li><a href="../spineCenter/waist-clinic.html">허리클리닉</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../rehabilitation/gymtherapy.html">재활치료</a>
-                        <ul class="sub_gnb">
-                            <li><a href="../rehabilitation/gymtherapy.html">운동치료</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../radiology/ultrasoundtest.html">영상의학</a>
-                        <ul class="sub_gnb">
-                            <li><a href="../radiology/ultrasoundtest.html">초음파치료</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../community/hospital-news.html">커뮤니티</a>
-                        <ul class="sub_gnb">
-                            <li><a href="../community/hospital-news.html">병원소식</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../reservation/reservation.html">상담예약</a>
-                        <ul class="sub_gnb">
-                            <li><a href="../reservation/reservation.html">진료예약안내</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <button type="button" class="m_gnb_btn"></button>
-                <div class="util_btn_box">
-                    <a href="#" class="service_btn">For Foreigners Medical Service</a>
-                    <a href="#" class="login_btn">로그인</a>
+            <dl class="skip_navi">
+                <dt class="blind"><strong>바로가기 메뉴</strong></dt>
+                <dd><a href="#content">본문 바로가기</a></dd>
+                <dd><a href="#gnb">주메뉴 바로가기</a></dd>
+            </dl>
+
+            <div class="container clearfix">
+                <h1 class="logo"><a href="#"><img src="../../assets/images/common/head_logo.png" alt="세솟는병원"></a></h1>
+                <div class="gnb_box">
+                    <div class="m_gnb_top">
+                        <div class="login_box">
+                            <a href="#">로그인</a>
+                            <a href="#">회원가입</a>
+                        </div>
+                        <div class="info_box">
+                            <a href="#"><span class="ico01"></span>온라인 상담</a>
+                            <a href="#"><span class="ico02"></span><small>예약전화</small> 1577-3631</a>
+                        </div>
+                        <button type="button" class="m_gnb_close"><img src="../../assets/images/common/m_ico_gnb_close.png" alt=""></button>
+                    </div>
+                    <ul id="gnb" class="gnb">
+                        <li>
+                            <a href="../aboutUs/mission-vision.html">병원소개</a>
+                            <ul class="sub_gnb">
+                                <li><a href="../aboutUs/history.html">병원 역사</a></li>
+                                <li><a href="../aboutUs/greetings.html">인사말</a></li>
+                                <li><a href="../aboutUs/mission-vision.html">미션 & 비젼</a></li>
+                                <li><a href="../aboutUs/medical-staff.html">의료진 소개</a></li>
+                                <li><a href="../aboutUs/floor.html">층별 안내</a></li>
+                                <li><a href="../aboutUs/symbol.html">병원CI</a></li>
+                                <li><a href="../aboutUs/ourmap.html">찾아오시는 길</a></li>
+                    
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../medicalGuidance/ward-room-guide.html">진료안내</a>
+                            <ul class="sub_gnb">
+                                <li><a href="../medicalGuidance/ward-room-guide.html">병실생활안내</a></li>
+                                <li><a href="../medicalGuidance/document-issuance-information.html">서류발급안내</a></li>
+                                <li><a href="../medicalGuidance/admission-discharge.html">입퇴원안내</a></li>
+                                <li><a href="../medicalGuidance/timetable.html">진료시간표</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../spineCenter/waist-clinic.html">척추센터</a>
+                            <ul class="sub_gnb">
+                                <li><a href="../spineCenter/waist-clinic.html">허리클리닉</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../rehabilitation/gymtherapy.html">재활치료</a>
+                            <ul class="sub_gnb">
+                                <li><a href="../rehabilitation/gymtherapy.html">운동치료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../radiology/ultrasoundtest.html">영상의학</a>
+                            <ul class="sub_gnb">
+                                <li><a href="../radiology/ultrasoundtest.html">초음파치료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../community/hospital-news.html">커뮤니티</a>
+                            <ul class="sub_gnb">
+                                <li><a href="../community/hospital-news.html">병원소식</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../reservation/reservation.html">상담예약</a>
+                            <ul class="sub_gnb">
+                                <li><a href="../reservation/reservation.html">진료예약안내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- [D] m_gnb안에 들어가는 항목은 js에서 작업 -->
+                    <ul id="mgnb" class="m_gnb"></ul>
+                    <span class="m_logo"><img src="../../assets/images/common/m_gnb_logo.png" alt="세솟는병원"></span>
+                    <div class="util_btn_box">
+                        <a href="#" class="service_btn">For Foreigners Medical Service</a>
+                        <a href="#" class="login_btn">로그인</a>
+                    </div>
                 </div>
+                <button type="button" class="m_gnb_open"><img src="../../assets/images/common/m_ico_gnb_open.png" alt=""></button>
             </div>
         </header>
         <!-- // header -->
@@ -82,57 +119,162 @@
         <div id="content">
             <!-- section1 -->
             <section class="section1">
-                <div class="visual_box"></div>
+                <div class="visual_box swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img_box" style="background-image: url('../../assets/images/main/visual_img.jpg');"></div>
+                            <div class="txt_box">
+                                <div class="container clearfix">
+                                    <div class="left">
+                                        <small>1971년 부터 2004년 까지</small><br>
+                                        故안화용박사께서 운영하신 <b>세강정형외과</b>가<br>
+                                        <b>세솟는정형외과</b>로 새롭게 역사를 이어갑니다.
+                                    </div>
+                                    <div class="right">
+                                        <div class="green">
+                                            <dl class="info">
+                                                <dt>진료안내</dt>
+                                                <dd>1577-3631</dd>
+                                            </dl>
+                                            <dl class="time">
+                                                <dt>진료시간</dt>
+                                                <dd>
+                                                    평일 AM09:00 ~ PM06:00<br>
+                                                    토요일 AM09:00 ~ PM01:00<br>
+                                                    점심시간 PM01:00 ~ PM02:00
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="blue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box" style="background-image: url('../../assets/images/main/visual_img.jpg');"></div>
+                            <div class="txt_box">
+                                <div class="container clearfix">
+                                    <div class="left">
+                                        <small>1971년 부터 2004년 까지</small><br>
+                                        故안화용박사께서 운영하신 <b>세강정형외과</b>가<br>
+                                        <b>세솟는정형외과</b>로 새롭게 역사를 이어갑니다.
+                                    </div>
+                                    <div class="right">
+                                        <div class="green">
+                                            <dl class="info">
+                                                <dt>진료안내</dt>
+                                                <dd>1577-3631</dd>
+                                            </dl>
+                                            <dl class="time">
+                                                <dt>진료시간</dt>
+                                                <dd>
+                                                    평일 AM09:00 ~ PM06:00<br>
+                                                    토요일 AM09:00 ~ PM01:00<br>
+                                                    점심시간 PM01:00 ~ PM02:00
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="blue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box" style="background-image: url('../../assets/images/main/visual_img.jpg');"></div>
+                            <div class="txt_box">
+                                <div class="container clearfix">
+                                    <div class="left">
+                                        <small>1971년 부터 2004년 까지</small><br>
+                                        故안화용박사께서 운영하신 <b>세강정형외과</b>가<br>
+                                        <b>세솟는정형외과</b>로 새롭게 역사를 이어갑니다.
+                                    </div>
+                                    <div class="right">
+                                        <div class="green">
+                                            <dl class="info">
+                                                <dt>진료안내</dt>
+                                                <dd>1577-3631</dd>
+                                            </dl>
+                                            <dl class="time">
+                                                <dt>진료시간</dt>
+                                                <dd>
+                                                    평일 AM09:00 ~ PM06:00<br>
+                                                    토요일 AM09:00 ~ PM01:00<br>
+                                                    점심시간 PM01:00 ~ PM02:00
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="blue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
 
             <!-- section2 -->
             <section class="section2">
                 <div class="container">
-                    <ul class="body_part_list">
-                        <li><a href="#"><img src="" alt="">목</a></li>
-                        <li><a href="#"><img src="" alt="">허리</a></li>
-                        <li><a href="#"><img src="" alt="">어깨</a></li>
-                        <li><a href="#"><img src="" alt="">무릎</a></li>
-                        <li><a href="#"><img src="" alt="">팔꿈치/손목/손</a></li>
-                        <li><a href="#"><img src="" alt="">고관절(엉덩이)</a></li>
-                        <li><a href="#"><img src="" alt="">발/발목</a></li>
-                    </ul>
+                    <div class="body_part_list">
+                        <a href="#"><span><img src="../../assets/images/main/ico_body_part01.png" alt="">목</span></a>
+                        <a href="#"><span><img src="../../assets/images/main/ico_body_part02.png" alt="">허리</span></a>
+                        <a href="#"><span><img src="../../assets/images/main/ico_body_part03.png" alt="">어깨</span></a>
+                        <a href="#"><span><img src="../../assets/images/main/ico_body_part04.png" alt="">무릎</span></a>
+                        <a href="#"><span><img src="../../assets/images/main/ico_body_part05.png" alt="">팔꿈치/손목/손</span></a>
+                        <a href="#"><span><img src="../../assets/images/main/ico_body_part06.png" alt="">고관절(엉덩이)</span></a>
+                        <a href="#"><span><img src="../../assets/images/main/ico_body_part07.png" alt="">발/발목</span></a>
+                    </div>
                 </div>
             </section>
 
             <!-- section3 -->
             <section class="section3">
-                <div class="container">
+                <div class="container clearfix">
                     <div class="notice_box">
                         <p class="tit"><b>NOTICE</b></p>
-                        <a href="#">+ 더보기</a>
+                        <a href="#" class="more">+ 더보기</a>
                         <ul class="notice_list">
-                            <li><a href="#"></a></li>
+                            <li><a href="#" class="title">[안내] 3월 공휴일 진료 안내</a><span class="date">2022-02-28</span></li>
+                            <li><a href="#" class="title">[안내] 설연휴 공휴일 진료 안내</a><span class="date">2022-01-20</span></li>
+                            <li><a href="#" class="title">[안내] 10월 임시공휴일 진료 안내</a><span class="date">2021-10-01</span></li>
+                            <li><a href="#" class="title">[안내] 코로나19 백신 접종 예약 안내 (7월26일~)</a><span class="date">2021-07-01</span></li>
+                            <li><a href="#" class="title">[김해민원장님] 분당서울대학교병원 정형외과</a><span class="date">2021-05-27</span></li>
                         </ul>
                     </div>
                     <div class="medical_staff_box">
                         <p class="tit">세솟는 <b>의료진</b></p>
-                        <div class="img_box">
-                            <p class="t1"></p>
-                            <p class="t2"></p>
+                        <div class="img_box" style="background-image: url('../../assets/images/main/medical_staff_img01_2.png'), url('../../assets/images/main/medical_staff_img01_1.jpg');">
+                            <p class="t1">
+                                <span class="c1">정형외과 전문의</span><br>
+                                <span class="c2">김해민 원장</span>
+                            </p>
+                            <p class="t2">중앙대학교 의과대학 졸업<br>
+                                분당서울대학교 병원 인공관절센터 전임의<br>
+                                공군 항공우주의료원 정형외과 과장<br>
+                                진료과목 : 관절(비수술 및 수술) - 무릎, 어깨, 고관절</p>
                             <a href="#" class="more_btn">자세히보기</a>
                         </div>
                     </div>
-                    <div class="green_box">
+                    <div class="green_box clearfix">
                         <div class="left">
-                            <p class="tit">척추수술 전문가가 쓴 <b>비수술 치료</b>에 대한 논문</p>
-                            <p class="txt"></p>
+                            <p class="tit">척추수술 전문가가 쓴 <br><b>비수술 치료</b>에 대한 <br class="m_hide"><b>논문</b></p>
+                            <p class="txt">척추외과학회지<br>
+                                2019년 Dec 26 (4) 151-159<br>
+                                10 페이지로 구성된 논문입니다.</p>
                             <a href="#" class="more_btn">자세히보기</a>
                         </div>
-                        <div class="right"></div>
+                        <div class="right" style="background-image: url('../../assets/images/main/medical_staff_img02.jpg');"></div>
                     </div>
-                    <div class="green_box">
+                    <div class="green_box clearfix">
                         <div class="left">
                             <p class="tit"><b>은빛파워</b> TV</p>
-                            <p class="txt"></p>
+                            <p class="txt">의사선생님이 쉽게 알려주는<br>
+                                어깨통증과 올바른 관리방법<br>
+                                (마포노인종합복지관)</p>
                             <a href="#" class="more_btn">동영상보기</a>
                         </div>
-                        <div class="right"></div>
+                        <div class="right" style="background-image: url('../../assets/images/main/medical_staff_img03.jpg');"></div>
                     </div>
                 </div>
             </section>
@@ -140,23 +282,37 @@
             <!-- section4 -->
             <section class="section4">
                 <ul class="quick_btn_list">
-                    <li><a href="#"><img src="" alt="">풍선성형술</a></li>
-                    <li><a href="#"><img src="" alt="">프롤로테라피</a></li>
-                    <li><a href="#"><img src="" alt="">신경차단술</a></li>
-                    <li><a href="#"><img src="" alt="">척추내시경</a></li>
-                    <li><a href="#"><img src="" alt="">미세현미경</a></li>
-                    <li><a href="#"><img src="" alt="">관절내시경</a></li>
-                    <li><a href="#"><img src="" alt="">관절줄기세포</a></li>
+                    <li><a href="#"><img src="../../assets/images/main/ico_quick_btn01.png" alt="">풍선성형술</a></li>
+                    <li><a href="#"><img src="../../assets/images/main/ico_quick_btn02.png" alt="">프롤로테라피</a></li>
+                    <li><a href="#"><img src="../../assets/images/main/ico_quick_btn03.png" alt="">신경차단술</a></li>
+                    <li><a href="#"><img src="../../assets/images/main/ico_quick_btn04.png" alt="">척추내시경</a></li>
+                    <li><a href="#"><img src="../../assets/images/main/ico_quick_btn05.png" alt="">미세현미경</a></li>
+                    <li><a href="#"><img src="../../assets/images/main/ico_quick_btn06.png" alt="">관절내시경</a></li>
+                    <li><a href="#"><img src="../../assets/images/main/ico_quick_btn07.png" alt="">관절줄기세포</a></li>
                 </ul>
             </section>
 
             <!-- section5 -->
             <section class="section5">
-                <div class="convention_hospital">
-                    <p class="tit"><b>협약병원</b>더 나은 세상을 만들겠습니다.</p>
-                    <ul class="hospital_list">
-                        <li><img src="" alt=""></li>
-                    </ul>
+                <div class="container">
+                    <div class="convention_hospital">
+                        <p class="tit"><span><b>협약병원</b>더 나은 세상을 <br class="m_hide">만들겠습니다.</span></p>
+                        <ul class="hospital_list clearfix">
+                            <li><img src="../../assets/images/main/hospital_img01.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img02.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img03.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img04.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img05.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img06.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img07.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img08.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img09.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img010.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img011.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img012.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img013.jpg" alt=""></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
@@ -164,8 +320,8 @@
 
         <!-- footer -->
         <footer id="footer">
-            <div class="container">
-                <span class="logo"></span>
+            <div class="container clearfix">
+                <span class="logo"><img src="../../assets/images/common/foot_logo.png" alt=""></span>
                 <p class="tel_box">대표전화 <strong>1577-3631</strong></p>
                 <ul class="info_list">
                     <li>04109 서울특별시 마포구 백범로 26 (신수동 81-101)</li>
