@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset=UTF-8">
+    <link rel="canonical" href="http://페이지 주소">
+    <meta name="description" content="웹페이지 설명 작성"/>
+    <meta name="keywords" content="키워드, 키워드..." />
+    <meta name="author" content="페이지 작성자" />
+    <meta name="copyright" content="저작권자" />
+    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="All" /> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>세솟는병원</title>
+    <link rel="stylesheet" href="../../assets/css/default.css">
+    <link rel="stylesheet" href="../../assets/css/sub.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script> 
+    <![endif]-->
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <dl class="skip_navi">
+                <dt class="blind"><strong>바로가기 메뉴</strong></dt>
+                <dd><a href="#content">본문 바로가기</a></dd>
+                <dd><a href="#gnb">주메뉴 바로가기</a></dd>
+            </dl>
+
+            <div class="gnb_header">
+                <div class="container clearfix">
+                    <h1 class="logo"><a href="#"><img src="../../assets/images/common/head_logo.png" alt="세솟는병원"></a></h1>
+                    <div class="gnb_box">
+                        <div class="m_gnb_top">
+                            <div class="login_box">
+                                <a href="#">로그인</a>
+                                <a href="#">회원가입</a>
+                            </div>
+                            <div class="info_box">
+                                <a href="#"><span class="ico01"></span>온라인 상담</a>
+                                <a href="#"><span class="ico02"></span><small>예약전화</small> 1577-3631</a>
+                            </div>
+                            <button type="button" class="m_gnb_close"><img src="../../assets/images/common/m_ico_gnb_close.png" alt=""></button>
+                        </div>
+                        <ul id="gnb" class="gnb">
+                            <li>
+                                <a href="../aboutUs/mission-vision.html">병원소개</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../aboutUs/history.html">병원 역사</a></li>
+                                    <li><a href="../aboutUs/greetings.html">인사말</a></li>
+                                    <li><a href="../aboutUs/mission-vision.html">미션 & 비젼</a></li>
+                                    <li><a href="../aboutUs/medical-staff.html">의료진 소개</a></li>
+                                    <li><a href="../aboutUs/floor.html">층별 안내</a></li>
+                                    <li><a href="../aboutUs/symbol.html">병원CI</a></li>
+                                    <li><a href="../aboutUs/ourmap.html">찾아오시는 길</a></li>
+                
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../medicalGuidance/ward-room-guide.html">진료안내</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../medicalGuidance/ward-room-guide.html">병실생활안내</a></li>
+                                    <li><a href="../medicalGuidance/document-issuance-information.html">서류발급안내</a></li>
+                                    <li><a href="../medicalGuidance/admission-discharge.html">입퇴원안내</a></li>
+                                    <li><a href="../medicalGuidance/timetable.html">진료시간표</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../spineCenter/waist-clinic.html">척추센터</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../spineCenter/waist-clinic.html">허리클리닉</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../rehabilitation/gymtherapy.html">재활치료</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../rehabilitation/gymtherapy.html">운동치료</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../radiology/ultrasoundtest.html">영상의학</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../radiology/ultrasoundtest.html">초음파치료</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../community/hospital-news.html">커뮤니티</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../community/hospital-news.html">병원소식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../reservation/reservation.html">상담예약</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../reservation/reservation.html">진료예약안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- [D] m_gnb안에 들어가는 항목은 js에서 작업 -->
+                        <ul id="mgnb" class="m_gnb"></ul>
+                        <span class="m_logo"><img src="../../assets/images/common/m_gnb_logo.png" alt="세솟는병원"></span>
+                        <div class="util_btn_box">
+                            <a href="#" class="service_btn">For Foreigners Medical Service</a>
+                            <a href="#" class="login_btn">로그인</a>
+                        </div>
+                    </div>
+                    <button type="button" class="m_gnb_open"><img src="../../assets/images/common/m_ico_gnb_open.png" alt=""></button>
+                </div>
+            </div>
+        </header>
+        <!-- // header -->
+
+        <!-- content -->
+        <div id="content">
+            <!-- sub_top_txt -->
+            <div class="sub_top_txt pc_hide">
+                <a href="#" class="back_btn pc_hide"><img src="../../assets/images/common/ico_back.png" alt=""></a>
+                <h2>
+                    <span class="eng">Sesonneun Orthopedic Hospital</span>
+                    <span class="kor">병원의 역사</span>
+                </h2>
+            </div>
+            <!-- // sub_top_txt -->
+
+            <!-- history_wrap -->
+            <div class="history_wrap">
+                <div class="container">
+                    <div class="sub_top_txt type2">
+                        <p class="t1">병원의 역사</p>
+                        <p class="t2">1971년 부터 2004년 까지 故안화용 박사께서 운영하신<br>
+                            세강정형외과가 [세솟는정형외과]로 새롭게 역사를 이어갑니다.</p>
+                    </div>
+                    <img src="../../assets/images/aboutUs/img_history01.jpg" alt="">
+                    <div class="convention_hospital">
+                        <p class="tit"><span><b>협약병원</b>더 나은 세상을 <br class="m_hide">만들겠습니다.</span></p>
+                        <ul class="hospital_list clearfix">
+                            <li><img src="../../assets/images/main/hospital_img01.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img02.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img03.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img04.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img05.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img06.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img07.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img08.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img09.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img010.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img011.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img012.jpg" alt=""></li>
+                            <li><img src="../../assets/images/main/hospital_img013.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- // history_wrap -->
+        </div>
+        <!-- // content -->
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="container clearfix">
+                <span class="logo"><img src="../../assets/images/common/foot_logo.png" alt=""></span>
+                <p class="tel_box">대표전화 <strong>1577-3631</strong></p>
+                <ul class="info_list">
+                    <li>04109 서울특별시 마포구 백범로 26 (신수동 81-101)</li>
+                    <li>대표 안영준</li>
+                    <li>사업자등록번호 501-31-30563</li>
+                    <li>이메일 : ssnosh@naver.com</li>
+                </ul>
+                <ul class="link_list">
+                    <li><a href="#">개인정보 취급방침</a></li>
+                    <li><a href="#">비급여고시</a></li>
+                    <li><a href="#">환자의 권리 및 의무</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- // footer -->
+    </div>
+    <!-- // wrap -->
+</body>
+</html>
