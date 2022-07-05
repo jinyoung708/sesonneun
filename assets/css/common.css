@@ -2,15 +2,13 @@
 
 /* common */
 * {box-sizing: border-box; letter-spacing: -0.025em;}
+img {max-width: 100%;}
+#wrap {overflow-x: hidden;}
 .container {max-width: 1280px; margin: 0 auto;}
 .clearfix:after{display:block; content: ''; clear:both; height:0; font-size:0; visibility:hidden;}
 .blind{position:absolute; top:0; left:0; width:1px; height:1px; font-size:0; line-height:0; overflow:hidden;}
-img {max-width: 100%;}
 .m_hide {display: block;}
 .pc_hide {display: none;}
-#wrap {overflow-x: hidden;}
-.dotdot1 {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.dotdot2 {display: -webkit-box; line-height: 1.4; max-height: 2.8em; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 
 
 /* header */
@@ -39,6 +37,7 @@ img {max-width: 100%;}
 #header .util_btn_box .service_btn {min-width: 202px;}
 #header .m_gnb_open, #header .m_gnb_top, #header .m_gnb {display: none;}
 
+
 /* footer */
 #footer {background-color: #444041;}
 #footer .container {position: relative; min-height: 309px; }
@@ -59,9 +58,12 @@ img {max-width: 100%;}
 
 
 @media screen and (max-width:1200px) {
+    /* common */
     .m_hide {display: none;}
     .pc_hide {display: block;}
 
+
+    /* header */
     #header.scrolled {padding-top: 102px;}
     #header.scrolled .gnb_header {border-bottom: 1px solid #acacac;}
     #header .gnb_header {border-bottom: 0;}
@@ -100,6 +102,8 @@ img {max-width: 100%;}
     #header .m_gnb, #header .m_gnb_top {display: block;}
     #header .m_gnb_close {position: absolute; right: 49px; top: 45px; font-size: 0;}
 
+
+    /* footer */
     #footer .container {min-height: inherit;}
     #footer .logo {left: 39px; top: 40px;}
     #footer .tel_box {left: auto; right: 44px; top: auto; bottom: 95px; font-size: 16px; text-align: right;}
@@ -113,6 +117,7 @@ img {max-width: 100%;}
 }
 
 @media screen and (max-width:640px) {
+    /* header */
     #header.scrolled {padding-top: 62px;}
     #header .container {height: 62px;}
     #header .logo {width: 180px; top: 18px;}
@@ -132,6 +137,8 @@ img {max-width: 100%;}
     #header .gnb_box .m_gnb .sub_gnb > li > a {height: 45px; padding: 0 20px; font-size: 14px;}
     #header .gnb_box .m_logo {margin-top: 42px;}
 
+    
+    /* footer */
     #footer .logo {left: 20px; top: 40px;}
     #footer .info_list {padding: 100px 20px 0;}
     #footer .info_list > li {font-size: 14px;}

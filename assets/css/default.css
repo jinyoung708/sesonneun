@@ -5,7 +5,6 @@
 @import url('common.css'); /* 공용css */
 
 
-
 /* reset 영역 */
 html,body,form,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,fieldset,th,td,button{margin:0;padding:0;border:0;font:inherit;}
 html,body{height:100%;}

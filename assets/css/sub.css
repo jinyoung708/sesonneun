@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
+/* sub common */
 #content {padding-bottom: 185px;}
+.dotdot1 {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.dotdot2 {display: -webkit-box; line-height: 1.4; max-height: 2.8em; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 
 .sub_top_txt {position: relative; max-width: 960px; margin: 0 auto; padding: 90px 0 50px; border-bottom: 1px solid #48d5ec; font-size: 0; text-align: center;}
 .sub_top_txt.no_line {border-bottom: 0;}
@@ -16,6 +19,7 @@
 .btn_box .more_btn {display: inline-block; width: 269px; height: 62px; line-height: 58px; border: 2px solid #d1d3d4; border-radius: 62px; font-size: 17px; color: #acacac;}
 
 
+/* hospital_news_wrap */
 .hospital_news_wrap {margin-top: 57px;}
 .news_list > li {float: left; width: calc(33.3% - 24px); margin-right: 36px; margin-top: 100px;}
 .news_list > li:nth-child(-n+3) {margin-top: 0;}
@@ -28,9 +32,7 @@
 .news_list > li .txt_box .t3 {position: absolute; left: 0; bottom: 0; width: 100%; font-size: 12px; color: #acacac;}
 
 
-
-
-.board_wrap {}
+/* board_wrap */
 .board_list {table-layout: fixed; border-top: 8px solid #d3d000;}
 .board_list thead {height: 117px;}
 .board_list th, .board_list td {border-bottom: 1px solid #d1d3d4; vertical-align: middle; font-size: 20px; color: #363636;}
@@ -62,6 +64,7 @@
 
 
 @media screen and (max-width:1200px) {
+    /* sub common */
     .sub_top_txt {height: 74px; max-width: 100%; padding: 0; border-top: 1px solid #acacac; border-bottom: 1px solid #acacac;}
     .sub_top_txt.no_line {border-bottom: 1px solid #acacac;}
     .sub_top_txt::before {display: none;}
@@ -70,6 +73,8 @@
     .sub_top_txt h2 .eng {display: none;}
     .sub_top_txt h2 .kor {font-size: 20px;}
 
+
+    /* hospital_news_wrap */
     .hospital_news_wrap {padding: 0 20px;}
     .news_list > li {width: calc(50% - 14px); margin-right: 28px; margin-top: 50px;}
     .news_list > li:nth-child(-n+3) {margin-top: 50px;}
@@ -82,6 +87,8 @@
     .news_list > li .txt_box .t2 {font-size: 13px;}
     .news_list > li .txt_box .t3 {font-size: 10px;}
 
+
+    /* board_wrap */
     .board_wrap {margin-top: -1px; position: relative;}
     .board_list {border-top-width: 18px;}
     .board_list thead {height: 90px;}
@@ -97,10 +104,15 @@
 }
 
 @media screen and (max-width:640px) {
+    /* sub common */
     .sub_top_txt {height: 45px;}
     .sub_top_txt .back_btn {left: 25px; width: 10px;}
     .sub_top_txt h2 .kor {font-size: 15px;}
 
+    .btn_box .more_btn {width: 180px; height: 44px; line-height: 40px; font-size: 14px;}
+
+
+    /* hospital_news_wrap */
     .hospital_news_wrap {padding: 0 10px; margin-top: 40px;}
     .news_list > li {width: calc(50% - 8px); margin-right: 16px; margin-top: 30px;}
     .news_list > li:nth-child(-n+3) {margin-top: 30px;}
@@ -113,8 +125,8 @@
     .news_list > li .txt_box .t2 {font-size: 12px;}
     .news_list > li .txt_box .t2 br {display: none;}
 
-    .btn_box .more_btn {width: 180px; height: 44px; line-height: 40px; font-size: 14px;}
-
+    
+    /* board_wrap */
     .board_list {border-top-width: 10px;}
     .board_list thead {height: 60px;}
     .board_list tbody td {height: 50px;}
