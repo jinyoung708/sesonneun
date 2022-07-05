@@ -34,83 +34,85 @@
                 <dd><a href="#gnb">주메뉴 바로가기</a></dd>
             </dl>
 
-            <div class="container clearfix">
-                <h1 class="logo"><a href="#"><img src="../../assets/images/common/head_logo.png" alt="세솟는병원"></a></h1>
-                <div class="gnb_box">
-                    <div class="m_gnb_top">
-                        <div class="login_box">
-                            <a href="#">로그인</a>
-                            <a href="#">회원가입</a>
+            <div class="gnb_header">
+                <div class="container clearfix">
+                    <h1 class="logo"><a href="#"><img src="../../assets/images/common/head_logo.png" alt="세솟는병원"></a></h1>
+                    <div class="gnb_box">
+                        <div class="m_gnb_top">
+                            <div class="login_box">
+                                <a href="#">로그인</a>
+                                <a href="#">회원가입</a>
+                            </div>
+                            <div class="info_box">
+                                <a href="#"><span class="ico01"></span>온라인 상담</a>
+                                <a href="#"><span class="ico02"></span><small>예약전화</small> 1577-3631</a>
+                            </div>
+                            <button type="button" class="m_gnb_close"><img src="../../assets/images/common/m_ico_gnb_close.png" alt=""></button>
                         </div>
-                        <div class="info_box">
-                            <a href="#"><span class="ico01"></span>온라인 상담</a>
-                            <a href="#"><span class="ico02"></span><small>예약전화</small> 1577-3631</a>
+                        <ul id="gnb" class="gnb">
+                            <li>
+                                <a href="../aboutUs/mission-vision.html">병원소개</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../aboutUs/history.html">병원 역사</a></li>
+                                    <li><a href="../aboutUs/greetings.html">인사말</a></li>
+                                    <li><a href="../aboutUs/mission-vision.html">미션 & 비젼</a></li>
+                                    <li><a href="../aboutUs/medical-staff.html">의료진 소개</a></li>
+                                    <li><a href="../aboutUs/floor.html">층별 안내</a></li>
+                                    <li><a href="../aboutUs/symbol.html">병원CI</a></li>
+                                    <li><a href="../aboutUs/ourmap.html">찾아오시는 길</a></li>
+                
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../medicalGuidance/ward-room-guide.html">진료안내</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../medicalGuidance/ward-room-guide.html">병실생활안내</a></li>
+                                    <li><a href="../medicalGuidance/document-issuance-information.html">서류발급안내</a></li>
+                                    <li><a href="../medicalGuidance/admission-discharge.html">입퇴원안내</a></li>
+                                    <li><a href="../medicalGuidance/timetable.html">진료시간표</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../spineCenter/waist-clinic.html">척추센터</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../spineCenter/waist-clinic.html">허리클리닉</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../rehabilitation/gymtherapy.html">재활치료</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../rehabilitation/gymtherapy.html">운동치료</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../radiology/ultrasoundtest.html">영상의학</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../radiology/ultrasoundtest.html">초음파치료</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../community/hospital-news.html">커뮤니티</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../community/hospital-news.html">병원소식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../reservation/reservation.html">상담예약</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../reservation/reservation.html">진료예약안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- [D] m_gnb안에 들어가는 항목은 js에서 작업 -->
+                        <ul id="mgnb" class="m_gnb"></ul>
+                        <span class="m_logo"><img src="../../assets/images/common/m_gnb_logo.png" alt="세솟는병원"></span>
+                        <div class="util_btn_box">
+                            <a href="#" class="service_btn">For Foreigners Medical Service</a>
+                            <a href="#" class="login_btn">로그인</a>
                         </div>
-                        <button type="button" class="m_gnb_close"><img src="../../assets/images/common/m_ico_gnb_close.png" alt=""></button>
                     </div>
-                    <ul id="gnb" class="gnb">
-                        <li>
-                            <a href="../aboutUs/mission-vision.html">병원소개</a>
-                            <ul class="sub_gnb">
-                                <li><a href="../aboutUs/history.html">병원 역사</a></li>
-                                <li><a href="../aboutUs/greetings.html">인사말</a></li>
-                                <li><a href="../aboutUs/mission-vision.html">미션 & 비젼</a></li>
-                                <li><a href="../aboutUs/medical-staff.html">의료진 소개</a></li>
-                                <li><a href="../aboutUs/floor.html">층별 안내</a></li>
-                                <li><a href="../aboutUs/symbol.html">병원CI</a></li>
-                                <li><a href="../aboutUs/ourmap.html">찾아오시는 길</a></li>
-                    
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="../medicalGuidance/ward-room-guide.html">진료안내</a>
-                            <ul class="sub_gnb">
-                                <li><a href="../medicalGuidance/ward-room-guide.html">병실생활안내</a></li>
-                                <li><a href="../medicalGuidance/document-issuance-information.html">서류발급안내</a></li>
-                                <li><a href="../medicalGuidance/admission-discharge.html">입퇴원안내</a></li>
-                                <li><a href="../medicalGuidance/timetable.html">진료시간표</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="../spineCenter/waist-clinic.html">척추센터</a>
-                            <ul class="sub_gnb">
-                                <li><a href="../spineCenter/waist-clinic.html">허리클리닉</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="../rehabilitation/gymtherapy.html">재활치료</a>
-                            <ul class="sub_gnb">
-                                <li><a href="../rehabilitation/gymtherapy.html">운동치료</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="../radiology/ultrasoundtest.html">영상의학</a>
-                            <ul class="sub_gnb">
-                                <li><a href="../radiology/ultrasoundtest.html">초음파치료</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="../community/hospital-news.html">커뮤니티</a>
-                            <ul class="sub_gnb">
-                                <li><a href="../community/hospital-news.html">병원소식</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="../reservation/reservation.html">상담예약</a>
-                            <ul class="sub_gnb">
-                                <li><a href="../reservation/reservation.html">진료예약안내</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <!-- [D] m_gnb안에 들어가는 항목은 js에서 작업 -->
-                    <ul id="mgnb" class="m_gnb"></ul>
-                    <span class="m_logo"><img src="../../assets/images/common/m_gnb_logo.png" alt="세솟는병원"></span>
-                    <div class="util_btn_box">
-                        <a href="#" class="service_btn">For Foreigners Medical Service</a>
-                        <a href="#" class="login_btn">로그인</a>
-                    </div>
+                    <button type="button" class="m_gnb_open"><img src="../../assets/images/common/m_ico_gnb_open.png" alt=""></button>
                 </div>
-                <button type="button" class="m_gnb_open"><img src="../../assets/images/common/m_ico_gnb_open.png" alt=""></button>
             </div>
         </header>
         <!-- // header -->

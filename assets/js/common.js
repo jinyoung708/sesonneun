@@ -35,4 +35,16 @@ $(function(){
         
     });
     $(window).resize();
+
+    $(window).on("scroll", function(){
+        pageY = window.pageYOffset;
+        if(pageY>=$("#content").offset().top){
+            $("#header").addClass("scrolled");
+        }
+        else{
+            $("#header").removeClass("scrolled");
+        }
+        
+    });
+    $(window).scroll();
 });

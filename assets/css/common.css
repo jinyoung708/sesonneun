@@ -8,10 +8,16 @@
 img {max-width: 100%;}
 .m_hide {display: block;}
 .pc_hide {display: none;}
+#wrap {overflow-x: hidden;}
+.dotdot1 {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.dotdot2 {display: -webkit-box; line-height: 1.4; max-height: 2.8em; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 
 
 /* header */
-#header {position: relative; z-index: 999; border-bottom: 3px solid #ebebeb;}
+#header {position: relative; z-index: 999;}
+#header.scrolled {padding-top: 149px;}
+#header.scrolled .gnb_header {position: fixed; top: 0; z-index: 2; width: 100%; background-color: #fff;}
+#header .gnb_header {top: -100px; transition: top 0.3s; border-bottom: 3px solid #ebebeb;}
 #header .container {position: relative; height: 146px; padding-top: 72px;}
 #header .logo {position: absolute; left: 0; top: 56px; font-size: 0;}
 #header .gnb_box .gnb {float: right;}
@@ -56,7 +62,9 @@ img {max-width: 100%;}
     .m_hide {display: none;}
     .pc_hide {display: block;}
 
-    #header {border-bottom: 0;}
+    #header.scrolled {padding-top: 102px;}
+    #header.scrolled .gnb_header {border-bottom: 1px solid #acacac;}
+    #header .gnb_header {border-bottom: 0;}
     #header .util_btn_box {display: none;}
     #header .container {height: 102px; padding-top: 0;}
     #header .logo {left: 50%; top: 30px; transform: translateX(-50%); width: 300px;}
@@ -105,22 +113,23 @@ img {max-width: 100%;}
 }
 
 @media screen and (max-width:640px) {
-    #header .container {height: 61.2px;}
+    #header.scrolled {padding-top: 62px;}
+    #header .container {height: 62px;}
     #header .logo {width: 180px; top: 18px;}
     #header .m_gnb_open {left: 12px; top: 20px; width: 19px;}
     #header .gnb_box .login_box {height: 65px; padding: 32px 40px 0;}
     #header .m_gnb_close {right: 30px; top: 28px; width: 20px;}
     #header .gnb_box {padding-bottom: 42px;}
     #header .gnb_box .login_box a {margin-right: 20px;}
-    #header .gnb_box .info_box a {height: 62px; font-size: 17px; padding: 18px 21px 0;}
+    #header .gnb_box .info_box a {height: 62px; font-size: 16px; padding: 18px 21px 0;}
     #header .gnb_box .info_box a::after {height: 30px; margin-top: -15px;}
     #header .gnb_box .info_box a small {font-size: 13px;}
-    #header .gnb_box .info_box a .ico01 {width: 21px;}
-    #header .gnb_box .info_box a .ico02 {width: 18px;}
+    #header .gnb_box .info_box a .ico01 {width: 21px; margin-right: 8px;}
+    #header .gnb_box .info_box a .ico02 {width: 18px; margin-right: 8px;}
     #header .gnb_box .m_gnb {padding: 0 28px; margin-top: 15px;}
-    #header .gnb_box .m_gnb > li > a {height: 60px; padding: 0 12px; font-size: 18px; background-position: right 15px center; background-size: 17px;}
+    #header .gnb_box .m_gnb > li > a {height: 50px; padding: 0 12px; font-size: 16px; background-position: right 15px center; background-size: 15px;}
     #header .gnb_box .m_gnb .sub_gnb {padding: 0 12px;}
-    #header .gnb_box .m_gnb .sub_gnb > li > a {height: 50px; padding: 0 20px; font-size: 15px;}
+    #header .gnb_box .m_gnb .sub_gnb > li > a {height: 45px; padding: 0 20px; font-size: 14px;}
     #header .gnb_box .m_logo {margin-top: 42px;}
 
     #footer .logo {left: 20px; top: 40px;}
