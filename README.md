@@ -5,4 +5,4 @@
 <br>
 
 ### Publishing List
-https://jinyoung708.github.io/sesonneun/html/layout/page.html
+https://jinyoung708.github.io/sesonneun/html/layout/_page.html
