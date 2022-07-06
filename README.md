@@ -6,3 +6,4 @@
 
 ### Publishing List
 https://jinyoung708.github.io/sesonneun/html/layout/_page.html
+https://jinyoung708.github.io/sesonneun/html/layout/pub_page.html
