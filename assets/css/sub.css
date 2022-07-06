@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+#header {display: none;}
 
 /* sub common */
 #content {padding-bottom: 185px;}
@@ -14,6 +17,11 @@
 .sub_top_txt h2 .eng::after {display: block; content:''; width: 8px; height: 9px; margin: 50px auto 30px; border-radius: 50%; background-color: #48d5ec; box-shadow: -12px 0 #48d5ec, 12px 0 #48d5ec;}
 .sub_top_txt h2 .kor {display: block; font-size: 50px; font-weight: 500;}
 .sub_top_txt .back_btn {position: absolute; left: 45px; top: 50%; transform: translateY(-50%);}
+
+.sub_top_txt.type2 {display: table; width: 100%; height: 295px; border: none; max-width: 1280px; padding: 0; background-repeat: no-repeat; background-position: 0 0; background-size: cover;}
+.sub_top_txt.type2::before {display: none;}
+.sub_top_txt.type2 .t1 {display: table-cell; padding-left: 90px; font-size: 70px; font-weight: 500; color: #fff; vertical-align: middle; text-align: left; text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3);}
+.sub_top_txt.type2 .t2 {display: table-cell; padding-right: 85px; font-size: 20px; font-weight: 500; color: #fff; vertical-align: middle; text-align: right;}
 
 .btn_box {margin-top: 50px; text-align: center;}
 .btn_box .more_btn {display: inline-block; width: 269px; height: 62px; line-height: 58px; border: 2px solid #d1d3d4; border-radius: 62px; font-size: 17px; color: #acacac;}
@@ -58,13 +66,103 @@
 .board_view .board_btn_box .list_btn {color: #fff; background-color: #acacac;}
 
 
+/* mission_vision_wrap */
+.mission_vision_wrap {margin-top: 150px;}
+.mission_vision_wrap .title {position: relative; z-index: 1; font-size: 33px; font-weight: 500; color: #363636; text-align: center;}
+.mission_vision_wrap .title:before {display: inline-block; content:''; position: absolute; z-index: -1; left: 50%; bottom: 2px; width: 214px; height: 12px; transform: translateX(-50%); background-color: #d3d000;}
+.mission_vision_wrap .t1 {margin-bottom: 20px; color: #00aed3; font-size: 35px; font-weight: 500;}
+.mission_vision_wrap .t2 {color: #363636; font-size: 20px; line-height: 2em;}
+.mission_vision_wrap .t2 em {color: #aeac0d;}
+.mission_vision_wrap .container > div {margin-bottom: 150px;}
+.mission_vision_wrap .container > div:last-child {margin-bottom: 0;}
+.mission_vision_wrap .left {float: left;}
+.mission_vision_wrap .right {float: right;}
+.mission_vision_wrap .mission {text-align: center;}
+.mission_vision_wrap .mission img {margin: 60px 0 40px;}
+.mission_vision_wrap .vision .right {padding: 0 80px; text-align: center;}
+.mission_vision_wrap .vision .right .title {margin-bottom: 90px;}
+.mission_vision_wrap .vision .right .t1 {margin-bottom: 10px;}
+.mission_vision_wrap .core_value {text-align: center; }
+.mission_vision_wrap .core_value .left {padding: 0 29px;}
+.mission_vision_wrap .core_value .left .title {margin-bottom: 110px;}
+.mission_vision_wrap .core_value .left img {margin-bottom: 110px;}
+.mission_vision_wrap .core_value .right {max-width: 40%;}
 
+/* symbol_wrap */
+.symbol_wrap {margin-top: 140px;}
+.symbol_wrap .tit {margin-bottom: 10px; font-size: 35px; font-weight: 500; color: #d3d000;}
+.symbol_wrap .txt {font-size: 20px; line-height: 1.75em; color: #363636;}
+.symbol_wrap .each {margin-bottom: 110px; text-align: center;}
+.symbol_wrap .each:last-child {margin-bottom: 0;}
+.symbol_wrap .each img {margin-top: 40px;}
+
+
+/* history_wrap */
+.history_wrap .container {margin-top: 130px;}
+.history_wrap .txt_box {position: relative; padding: 240px 0 270px; margin-bottom: 150px; text-align: center;}
+.history_wrap .txt_box .year {line-height: 1; font-family: 'Roboto', sans-serif; font-size: 200px; }
+.history_wrap .txt_box .t1 {margin-bottom: 10px; font-size: 45px; font-weight: 500;}
+.history_wrap .txt_box .t2 {font-size: 20px; line-height: 2em; color: #363636;}
+.history_wrap .txt_box .blue {position: absolute; left: 60px; top: 0; text-align: left;}
+.history_wrap .txt_box .blue .year {margin-left: -18px; color: #00aed3;}
+.history_wrap .txt_box .blue .t1 {color: #00aed3;}
+.history_wrap .txt_box .green {position: absolute; right: 60px; bottom: 0; text-align: right;}
+.history_wrap .txt_box .green .year {margin-bottom: -15px; color: #d3d000;}
+.history_wrap .txt_box .green .t1 {color: #d3d000;}
+.history_wrap .txt_box .img_box {display: inline-block;}
+
+
+/* greetings_wrap */
+.greetings_wrap {margin-top: 97px;}
+.greetings_wrap .greetings {margin-top: 68px;}
+.greetings_wrap .left {float: left; width: 45%;}
+.greetings_wrap .right {float: right; width: 55%; padding-left: 54px; padding-top: 140px;}
+.greetings_wrap .t1 {line-height: 1.15; margin-bottom: 70px; font-size: 50px; font-weight: 500; color: #d3d000;}
+.greetings_wrap .t1::before {display: block; content:''; width: 69px; height: 43px; margin-bottom: 20px; background: url('../images/aboutUs/img_greetings03.png') no-repeat center/contain;}
+.greetings_wrap .t1 small {font-size: 35px;}
+.greetings_wrap .t2 {font-size: 20px; line-height: 1.75em; word-break: keep-all; text-align: justify;}
+
+
+/* ourmap_wrap */
+.ourmap_wrap .map_box {margin-top: 28px; margin-bottom: 85px;}
+.ourmap_wrap .map_contact_box {display: table; width: 100%; height: 138px; padding: 0 98px; background-color: #f2f4f3;}
+.ourmap_wrap .map_contact_box .each {display: table-cell; vertical-align: middle; font-size: 25px; font-weight: 500; letter-spacing: -0.05em;}
+.ourmap_wrap .map_contact_box .each img {margin-right: 15px; margin-top: -10px; vertical-align: middle;}
+.ourmap_wrap .title {padding-left: 100px; padding-bottom: 10px; border-bottom: 1px solid #d3d000; font-size: 30px; font-weight: 700;}
+.ourmap_wrap .transport_box {margin-top: -1px;}
+.ourmap_wrap .transport_box .each {display: table; width: 100%;}
+.ourmap_wrap .transport_box .each .left {display: table-cell; width: 432px; padding-top: 45px; vertical-align: top; text-align: center;}
+.ourmap_wrap .transport_box .each .left p {display: inline-block; position: relative; width: 280px; height: 67px; line-height: 67px; padding-left: 95px; border-radius: 67px; background-color: #d3d000; color: #fff; font-size: 23px; font-weight: 700; text-align: left;}
+.ourmap_wrap .transport_box .each .left p img {position: absolute; left: 40px; top: 50%; transform: translateY(-50%);}
+.ourmap_wrap .transport_box .each .right {display: table-cell; padding: 45px 0; border-top: 1px solid #969596; vertical-align: top;}
+.ourmap_wrap .transport_box .subway_list > li {margin-bottom: 15px; font-size: 23px;}
+.ourmap_wrap .transport_box .subway_list > li:last-child {margin-bottom: 0;}
+.ourmap_wrap .transport_box .subway_list > li b {font-weight: 500;}
+.ourmap_wrap .transport_box .subway_list > li span {display: inline-block; height: 38px; line-height: 28px; padding: 0 20px; border: 4px solid #000; border-radius: 38px;}
+.ourmap_wrap .transport_box .subway_list > li span.bd_color1 {border-color: #48c418;}
+.ourmap_wrap .transport_box .subway_list > li span.bd_color2 {border-color: #66c1c7;}
+.ourmap_wrap .transport_box .subway_list > li span.bd_color3 {border-color: #a33bc5;}
+.ourmap_wrap .transport_box .bus_list > li {margin-bottom: 20px; font-size: 23px;}
+.ourmap_wrap .transport_box .bus_list > li b {font-weight: 500;}
+.ourmap_wrap .transport_box .bus_list > li b img {margin-right: 3px; margin-top: -10px; vertical-align: middle;}
+.ourmap_wrap .transport_box .bus_list > li .t2 {margin-top: 20px; padding-left: 10px;}
+.ourmap_wrap .transport_box .car_list > li {margin-bottom: 20px; font-size: 23px;}
+.ourmap_wrap .transport_box .car_list > li b {font-weight: 500;}
+.ourmap_wrap .transport_box .car_list > li b img {margin-right: 3px; margin-top: -8px; vertical-align: middle;}
+.ourmap_wrap .transport_box .car_list > li .t2 {margin-top: 20px; padding-left: 10px;}
+.ourmap_wrap .transport_box .car_list > li .t2 small {display: block; position: relative; padding-left: 20px; margin-top: 30px; margin-bottom: 40px; font-size: 18px;}
+.ourmap_wrap .transport_box .car_list > li .t2 small span {position: absolute; left: 0; top: 0;}
+.ourmap_wrap .transport_box .car_list > li .num_list {padding-left: 10px;}
+.ourmap_wrap .transport_box .car_list > li .num_list > li {position: relative; padding-left: 25px; margin-top: 20px;}
+.ourmap_wrap .transport_box .car_list > li .num_list > li span {position: absolute; left: 0; top: 0;}
 
 
 
 
 @media screen and (max-width:1200px) {
     /* sub common */
+    #content {padding-bottom: 90px;}
+
     .sub_top_txt {height: 74px; max-width: 100%; padding: 0; border-top: 1px solid #acacac; border-bottom: 1px solid #acacac;}
     .sub_top_txt.no_line {border-bottom: 1px solid #acacac;}
     .sub_top_txt::before {display: none;}
@@ -72,6 +170,10 @@
     .sub_top_txt h2 {display: inline-block; vertical-align: middle;}
     .sub_top_txt h2 .eng {display: none;}
     .sub_top_txt h2 .kor {font-size: 20px;}
+
+    .sub_top_txt.type2 {height: 150px;}
+    .sub_top_txt.type2 .t1 {display: none;}
+    .sub_top_txt.type2 .t2 {padding: 0 20px; text-align: center; font-size: 18px;}
 
 
     /* hospital_news_wrap */
@@ -100,7 +202,57 @@
     .board_view .board_view_top .info {padding: 14px 40px;}
     .board_view .board_view_top .info .each {font-size: 13px; margin-right: 40px;}
     .board_view .board_view_con {padding: 40px;}
-    .board_view .board_btn_box {float: none; margin-right: 0; text-align: center;}
+    .board_view .board_btn_box {float: none; margin-right: 0; text-align: center;}    
+
+
+    /* mission_vision_wrap */
+    .mission_vision_wrap {margin-top: 50px;}
+    .mission_vision_wrap .title {font-size: 24px;}
+    .mission_vision_wrap .title::before {width: 161px; height: 10px;}
+    .mission_vision_wrap .t1 {margin-bottom: 10px; font-size: 23px;}
+    .mission_vision_wrap .t2 {font-size: 16px;}
+    .mission_vision_wrap .container > div {margin-bottom: 90px;}
+    .mission_vision_wrap .mission img {margin: 40px 0 20px;}
+    .mission_vision_wrap .vision {position: relative;}
+    .mission_vision_wrap .vision > div {width: 50%;}
+    .mission_vision_wrap .vision .left {position: absolute; left: 0; top: 0; height: 100%; padding-right: 13px;}
+    .mission_vision_wrap .vision .left img {width: 100%; height: 100%;}
+    .mission_vision_wrap .vision .right {padding: 0;}
+    .mission_vision_wrap .core_value .left {width: 100%;}
+    .mission_vision_wrap .core_value .left .title {margin-bottom: 80px;}
+    .mission_vision_wrap .core_value .left img {margin-bottom: 50px;}
+    .mission_vision_wrap .core_value .right {display: none;}
+
+
+    /* symbol_wrap */
+    .symbol_wrap {margin-top: 50px; padding: 0 40px;}
+    .symbol_wrap .tit {margin-bottom: 5px; font-size: 23px;}
+    .symbol_wrap .txt {font-size: 16px;}
+    .symbol_wrap .each {margin-bottom: 50px;}
+    .symbol_wrap .each img {margin-top: 15px;}
+
+    /* history_wrap */
+    .history_wrap .container {margin-top: 70px;}
+    .history_wrap .txt_box {padding: 130px 0 160px; margin-bottom: 0; }
+    .history_wrap .txt_box .year {font-size: 90px; }
+    .history_wrap .txt_box .t1 {margin-bottom: 0; font-size: 23px;}
+    .history_wrap .txt_box .t2 {line-height: 1.5em; font-size: 16px;}
+    .history_wrap .txt_box .blue {left: 0; padding: 0 55px;}
+    .history_wrap .txt_box .blue .year {margin-left: 0;}
+    .history_wrap .txt_box .green {right: 0; padding: 0 55px;}
+    .history_wrap .txt_box .green .year {margin-bottom: -5px;}
+    .convention_hospital {display: none;}
+
+
+    /* greetings_wrap */
+    .greetings_wrap {margin-top: 0; text-align: center;}
+    .greetings_wrap .greetings {margin-top: 50px; padding: 0 40px;}
+    .greetings_wrap .t1 {line-height: 1.3; margin-bottom: 35px; font-size: 32px; text-align: center;}
+    .greetings_wrap .t1::before {margin: 0 auto 10px;}
+    .greetings_wrap .t1 small {font-size: 32px;}
+    .greetings_wrap .t2 {font-size: 18px; line-height: 1.4em;}
+    .greetings_wrap .left {float: none; display: inline-block; width: auto; margin-top: 35px;}
+    .greetings_wrap .right {float: none; width: 100%; padding-left: 0; padding-top: 0; text-align: left;}
 }
 
 @media screen and (max-width:640px) {
@@ -108,6 +260,9 @@
     .sub_top_txt {height: 45px;}
     .sub_top_txt .back_btn {left: 25px; width: 10px;}
     .sub_top_txt h2 .kor {font-size: 15px;}
+
+    .sub_top_txt.type2 {height: 120px;}
+    .sub_top_txt.type2 .t2 {font-size: 15px; font-weight: 400;}
 
     .btn_box .more_btn {width: 180px; height: 44px; line-height: 40px; font-size: 14px;}
 
@@ -139,8 +294,59 @@
     .board_view .board_view_top .info {padding: 10px 20px;}
     .board_view .board_view_con {padding: 20px;}
     .board_view .board_btn_box a {width: 80px; height: 32px; line-height: 30px; border-radius: 7px; font-size: 14px;}
+
+
+    /* mission_vision_wrap */
+    .mission_vision_wrap {margin-top: 30px;}
+    .mission_vision_wrap .title {font-size: 20px;}
+    .mission_vision_wrap .title::before {width: 140px; height: 8px;}
+    .mission_vision_wrap .container > div {margin-bottom: 50px;}
+    .mission_vision_wrap .t1 {margin-bottom: 5px; font-size: 16px;}
+    .mission_vision_wrap .t2 {font-size: 14px;}
+    .mission_vision_wrap .mission {padding: 0 20px;}
+    .mission_vision_wrap .vision .right .title {margin-bottom: 50px;}
+    .mission_vision_wrap .core_value .left {padding: 0 20px;}
+    .mission_vision_wrap .core_value .left .title {margin-bottom: 50px;}
+    .mission_vision_wrap .core_value .left img {margin-bottom: 30px;}
+
+
+    /* symbol_wrap */
+    .symbol_wrap {margin-top: 30px; padding: 0 20px;}
+    .symbol_wrap .tit {font-size: 18px;}
+    .symbol_wrap .txt {font-size: 14px; word-break: keep-all;}
+    .symbol_wrap .txt br {display: none;}
+
+    /* history_wrap */
+    .history_wrap .container {margin-top: 50px;}
+    .history_wrap .txt_box {padding: 0 20px;}
+    .history_wrap .txt_box .t1 {font-size: 17px;}
+    .history_wrap .txt_box .t2 {font-size: 14px;}
+    .history_wrap .txt_box .year {font-size: 50px;}
+    .history_wrap .txt_box .blue {position: relative; padding: 0;}
+    .history_wrap .txt_box .img_box {margin-top: -60px;}
+    .history_wrap .txt_box .green {position: relative; padding: 0; margin-top: -50px;}
+    .convention_hospital {display: none;}
+
+    /* greetings_wrap */
+    .greetings_wrap .greetings {padding: 0 20px; margin-top: 30px;}
+    .greetings_wrap .t1 {font-size: 20px; margin-bottom: 20px;}
+    .greetings_wrap .t1::before {width: 40px; margin-bottom: 5px;}
+    .greetings_wrap .t1 small {font-size: 20px;}
+    .greetings_wrap .t2 {font-size: 14px;}
+    .greetings_wrap .left {margin-top: 20px;}
 }
 
 @media screen and (max-width:480px) {
+    /* sub common */
+    .sub_top_txt.type2 .t2 {word-break: keep-all;}
+    .sub_top_txt.type2 .t2 br {display: none;}
 
+    /* mission_vision_wrap */
+    .mission_vision_wrap .t2 {word-break: keep-all;}
+    .mission_vision_wrap .t2 br {display: none;}
+    .mission_vision_wrap .container > div {margin-bottom: 60px;}
+    .mission_vision_wrap .vision .left {display: none;}
+    .mission_vision_wrap .vision .right {float: none; width: 100%; padding: 0 20px;}
+    .mission_vision_wrap .vision .right .title {margin-bottom: 30px;}
+    .mission_vision_wrap .core_value .left .title {margin-bottom: 30px;}
 }

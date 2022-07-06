@@ -79,14 +79,6 @@
 
 /* section5 */
 .section5 {padding: 68px 0 70px;}
-.convention_hospital {position: relative; padding-left: 264px;}
-.convention_hospital .tit {position: absolute; left: 0; top: 0; width: 221px; height: 100%; background-color: #2a7bc5; color: #fff; text-align: center;}
-.convention_hospital .tit::after {display: inline-block; content:''; width: 0; height: 100%; vertical-align: middle;}
-.convention_hospital .tit span {display: inline-block; vertical-align: middle; font-size: 19px;}
-.convention_hospital .tit span b {display: block; margin-bottom: 15px; font-size: 31px; font-weight: 500;}
-.convention_hospital .hospital_list > li {float: left; width: calc(20% - 9.6px); margin-top: 20px; margin-right: 12px; font-size: 0;}
-.convention_hospital .hospital_list > li:nth-child(-n+5) {margin-top: 0;}
-.convention_hospital .hospital_list > li:nth-child(5n) {margin-right: 0;}
 
 
 @media screen and (max-width:1200px) {
@@ -149,13 +141,6 @@
 
     /* section5 */
     .section5 {padding: 50px 20px 100px;}
-    .convention_hospital {padding-left: 0;}
-    .convention_hospital .tit {position: relative; margin-bottom: 20px; padding-left: 34px; width: auto; height: auto; text-align: left; background-color: #fff; font-size: 20px; color: #444041;}
-    .convention_hospital .tit::before {display: inline-block; content: ''; width: 21px; height: 21px; position: absolute; left: 0; top: 8px; background-color: #d3d000;}
-    .convention_hospital .tit::after {display: none;}
-    .convention_hospital .tit span b {display: inline-block; margin-bottom: 0; padding-right: 20px; font-size: 25px;}
-    .convention_hospital .hospital_list > li {width: calc(20% - 5.6px); margin-right: 7px;  margin-top: 11px;}
-    .convention_hospital .hospital_list > li img {width: 100%;}
 }
 
 @media screen and (max-width:640px) {
@@ -205,16 +190,6 @@
 
     /* section5 */
     .section5 {padding: 30px 10px 80px;}
-    .convention_hospital .tit {padding-left: 25px;}
-    .convention_hospital .tit::before {width: 16px; height: 16px; top: 10px;}
-    .convention_hospital .tit span {font-size: 15px;}
-    .convention_hospital .tit span b {font-size: 18px;}
-    .convention_hospital .hospital_list > li {width: calc(33.3% - 4.66px);}
-    .convention_hospital .hospital_list > li:nth-child(5n) {margin-right: 7px;}
-    .convention_hospital .hospital_list > li:nth-child(3n) {margin-right: 0;}
-    .convention_hospital .hospital_list > li:nth-child(3n+1) {clear: both;}
-    .convention_hospital .hospital_list > li:nth-child(-n+5) {margin-top: 11px;}
-    .convention_hospital .hospital_list > li:nth-child(-n+3) {margin-top: 0;}
 }
 
 @media screen and (max-width:400px) {
