@@ -25,6 +25,23 @@
 .btn_box {margin-top: 50px; text-align: center;}
 .btn_box .more_btn {display: inline-block; width: 269px; height: 62px; line-height: 58px; border: 2px solid #d1d3d4; border-radius: 62px; font-size: 17px; color: #acacac;}
 
+.tab3 {font-size: 0; overflow: hidden;}
+.tab3 > li {display: table; width: calc(33.33% - 2px); margin-right: 3px; float: left; background-color: #acacac;}
+.tab3 > li.active {background-color: #d3d000;}
+.tab3 > li.active a {color: #363636;}
+.tab3 > li:last-child {margin-right: 0;}
+.tab3 > li > a {display: table-cell; height: 69px; text-align: center; color: #fff; font-size: 25px; font-weight: 500; vertical-align: middle;}
+
+.sch_box {text-align: right; margin: 50px 0 11px;}
+.sch_box > div {display: inline-block; position: relative;}
+.sch_box select {display: inline-block; min-width: 144px; height: 47px; border: 1px solid #acacac; font-size: 20px; text-align: center; vertical-align: top;}
+.sch_box label {display: inline-block; vertical-align: top;}
+.sch_box input {width: 377px; height: 47px; padding-left: 10px; padding-right: 110px; border: 1px solid #acacac; font-size: 20px;}
+.sch_box input::placeholder {color: #d1d3d4;}
+.sch_box input::-moz-placeholder {color: #d1d3d4;}
+.sch_box input::-webkit-input-placeholder {color: #d1d3d4;}
+.sch_box .sch_btn {position: absolute; right: 0; top: 0; width: 100px; height: 47px; padding-left: 43px; background: #d3d000 url('../images/common/ico_sch.png') no-repeat 17px center; font-size: 20px; font-weight: 500; color: #fff; text-align: left;}
+
 
 /* hospital_news_wrap */
 .hospital_news_wrap {margin-top: 57px;}
@@ -39,17 +56,22 @@
 .news_list > li .txt_box .t3 {position: absolute; left: 0; bottom: 0; width: 100%; font-size: 12px; color: #acacac;}
 
 
-/* board_wrap */
+/* board */
 .board_list {table-layout: fixed; border-top: 8px solid #d3d000;}
 .board_list thead {height: 117px;}
 .board_list th, .board_list td {border-bottom: 1px solid #d1d3d4; vertical-align: middle; font-size: 20px; color: #363636;}
 .board_list tbody td {height: 83px; text-align: center;}
 .board_list tbody td.tit {text-align: left;}
 .board_list tbody td.tit a {display: block;}
+.board_list tbody td.lock i {display: inline-block; width: 24px; height: 25px; background: url('../images/reservation/ico_lock.png') no-repeat 0 center/contain;}
+.board_list tbody td.unlock i {display: inline-block; width: 24px; height: 25px; background: url('../images/reservation/ico_unlock.png') no-repeat center/contain;}
+
 .pagination {margin-top: 50px; text-align: center; tab-size: 0;}
 .pagination a {display: inline-block; margin: 0 10px; font-size: 17px; color: #acacac; vertical-align: middle;}
 .pagination a.active {color: #363636;}
 .pagination a.page_arrow {font-size: 0;}
+.pagination a.page_arrow2 {font-size: 0; margin: 0 5px;}
+
 .board_view {border-top: 8px solid #d3d000;}
 .board_view .board_view_top .tit {position: relative; padding: 43px 320px 43px 135px; border-bottom: 1px solid #d1d3d4; font-size: 0;}
 .board_view .board_view_top .tit::after {display: inline-block; content:''; width: 0; height: 100%; vertical-align: middle;}
@@ -63,6 +85,41 @@
 .board_view .board_btn_box a {display: inline-block; width: 98px; height: 37px; line-height: 35px; margin-right: 4px; border: 1px solid #d1d3d4; border-radius: 10px; font-size: 18px; color: #acacac; text-align: center;}
 .board_view .board_btn_box a:last-child {margin-right: 0;}
 .board_view .board_btn_box .list_btn {color: #fff; background-color: #acacac;}
+
+.board_write {border-top: 8px solid #d3d000;}
+.board_write .board_write_info {border-bottom: 1px solid #d1d3d4;}
+.board_write .board_write_info dl {display: flex; max-width: 960px; margin: 0 auto; padding: 45px 0; flex-wrap: wrap; align-items: center;}
+.board_write .board_write_info dl dt {width: 92px; margin-bottom: 24px; font-size: 20px; word-spacing: 4px; margin-top: 8px; align-self: baseline;}
+.board_write .board_write_info dl dd {width: calc(100% - 92px); margin-bottom: 24px;}
+.board_write .board_write_info dl dd input[type="text"] {max-width: 100%; height: 47px; padding: 0 20px; border: 1px solid #acacac; font-size: 20px;}
+.board_write .board_write_info dl dd input[type="text"]::placeholder {font-size: 16px; color: #acacac;}
+.board_write .board_write_info dl dd input[type="text"]::-moz-placeholder {font-size: 16px; color: #acacac;}
+.board_write .board_write_info dl dd input[type="text"]::-webkit-input-placeholder {font-size: 16px; color: #acacac;}
+.board_write .board_write_info dl dd .lock_check {display: inline-block; margin-left: 40px; font-size: 20px; cursor: pointer;}
+.board_write .board_write_info dl dd .lock_check input[type="checkbox"] {width: 32px; height: 32px; margin-top: -2px; margin-left: 10px; border: 1px solid #acacac; vertical-align: middle;}
+.board_write .board_write_info dl dt:last-of-type, .board_write .board_write_info dl dd:last-of-type {margin-bottom: 0;}
+.board_write .board_write_content {padding: 47px 0; border-bottom: 1px solid #d1d3d4;}
+.board_write .board_write_content .bd_box {max-width: 960px; margin: 0 auto; border: 1px solid #acacac;}
+.board_write .board_write_content .bd_box textarea {width: 100%; height: 442px; border: none; padding: 50px 110px; font-size: 16px;}
+.board_write .board_write_content .bd_box textarea::placeholder {color: #acacac;}
+.board_write .board_write_content .bd_box textarea::-moz-placeholder {color: #acacac;}
+.board_write .board_write_content .bd_box textarea::-webkit-input-placeholder {color: #acacac;}
+.board_write .board_write_content .bd_box .security_num {padding: 24px 0; background-color: #acacac; text-align: center;}
+.board_write .board_write_content .bd_box .security_num .num {padding-right: 15px; font-size: 20px;}
+.board_write .board_write_content .bd_box .security_num input {width: 195px; height: 47px; border: none; font-size: 20px; text-align: center;}
+.board_write .board_write_content .bd_box .security_num .txt {padding-left: 15px; font-size: 16px; color: #fff;}
+.board_write .board_write_content .agree_box {max-width: 960px; margin: 30px auto 0; text-align: center;}
+.board_write .board_write_content .agree_box label {font-size: 16px; cursor: pointer;}
+.board_write .board_write_content .agree_box label input[type="checkbox"] {width: 22px; height: 22px; margin-top: -3px; margin-right: 2px; border: 1px solid #acacac; vertical-align: middle;}
+.board_write .board_write_content .agree_box .more_btn {display: inline-block; width: 115px; height: 20px; line-height: 20px; margin-left: 5px; font-size: 13px; background-color: #acacac; color: #fff; border-radius: 20px;}
+.board_write input[type="checkbox"] {cursor: pointer;}
+.board_write input[type="checkbox"]::after {border: solid #fff; border-width: 0 3px 3px 0; content: ''; display: none; height: 60%; left: 35%; position: relative; top: 6%; transform: rotate(45deg); width: 22%;}
+.board_write input[type="checkbox"]:checked {background-color: #d3d000;}
+.board_write input[type="checkbox"]:checked::after {display: block;}
+.board_write .btn_box {font-size: 0;}
+.board_write .btn_box a {display: inline-block; width: 137px; height: 47px; line-height: 45px; border: 1px solid #acacac; color: #acacac; font-size: 20px; text-align: center; margin-right: 7px;}
+.board_write .btn_box a:last-child {margin-right: 0;}
+.board_write .btn_box .ok_btn {border-color: #d3d000; background-color: #d3d000; color: #fff;}
 
 
 /* mission_vision_wrap */
@@ -156,6 +213,57 @@
 .ourmap_wrap .transport_box .car_list > li .num_list > li span {position: absolute; left: 0; top: 0;}
 
 
+/* reservation_wrap */
+.reservation_wrap {margin-top: 107px;}
+.reservation_wrap .top_txt {margin: 110px 0 100px; text-align: center;}
+.reservation_wrap .top_txt .title {font-size: 50px; font-weight: 500;}
+.reservation_wrap .top_txt .title::after {display: block; content: ''; width: 64px; height: 6px; margin: 15px auto 25px; background-color: #d3d000;}
+.reservation_wrap .top_txt .txt {font-size: 20px; color: #363636;}
+.reservation_wrap .info_box {display: table; width: 100%; border: 2px solid #f2f4f3; padding: 46px 0; margin-bottom: 35px;}
+.reservation_wrap .info_box > div {display: table-cell; position: relative; width: 50%; vertical-align: middle;}
+.reservation_wrap .info_box > div .ico {position: absolute; top: 0;}
+.reservation_wrap .info_box > div .t1 {font-size: 25px; font-weight: 500;}
+.reservation_wrap .info_box > div .t2 {margin-top: -5px; font-family: 'Roboto', sans-serif; font-size: 60px; font-weight: 700; color: #00aed3;}
+.reservation_wrap .info_box > div .t3 {margin-top: 25px; font-size: 20px;}
+.reservation_wrap .info_box > div .t4 {line-height: 1.2; font-size: 30px; color: #00aed3; font-weight: 700;}
+.reservation_wrap .info_box > div .t4 span {padding-right: 10px; font-size: 25px; color: #444041; font-weight: 500; word-spacing: 16px}
+.reservation_wrap .info_box .left {padding-left: 230px; border-right: 3px solid #f2f4f3;}
+.reservation_wrap .info_box .left .ico {left: 114px;}
+.reservation_wrap .info_box .right {padding-left: 190px;}
+.reservation_wrap .info_box .right .ico {left: 70px;}
+.reservation_wrap .bg_box {padding: 75px 95px; background-color: #f2f4f3;}
+.reservation_wrap .bg_box .t1 {margin-bottom: 50px; line-height: 1.4; font-size: 30px; font-weight: 500; color: #363636;}
+.reservation_wrap .bg_box .square_list > li {position: relative; margin-bottom: 5px; padding-left: 28px; font-size: 20px; font-weight: 300;}
+.reservation_wrap .bg_box .square_list > li::before {display: inline-block; content:''; position: absolute; left: 0; top: 8px; width: 13px; height: 15px; background-color: #d3d000;}
+.reservation_wrap .bg_box .square_list > li span {font-weight: 500; color: #46ce5a;}
+.reservation_wrap .btn_box {margin-top: 45px;}
+.reservation_wrap .btn_box .naver_btn, .reservation_wrap .btn_box .write_btn {display: inline-block; width: 559px; height: 85px; line-height: 85px; border-radius: 85px; background-color: #46ce5a; color: #fff; font-size: 30px; font-weight: 500;}
+.reservation_wrap .step_list {margin-bottom: 100px; overflow: hidden;}
+.reservation_wrap .step_list > li {position: relative; float: left; width: calc(25% - 27.75px); height: 250px; margin-right: 37px; border: 2px solid #4ec4c8; border-radius: 25px; text-align: center;}
+.reservation_wrap .step_list > li:nth-child(2) {border-color: #5dbc9b;}
+.reservation_wrap .step_list > li:nth-child(3) {border-color: #99c64d;}
+.reservation_wrap .step_list > li:nth-child(4) {border-color: #d3d000;}
+.reservation_wrap .step_list > li:last-child {margin-right: 0;}
+.reservation_wrap .step_list > li::before {display: inline-block; content:''; width: 0; height: 100%; vertical-align: middle;}
+.reservation_wrap .step_list > li::after {display: inline-block; content:''; position: absolute; left: 100%; top: 50%; width: 17px; height: 30px; margin-left: 13px; background: url('../images/reservation/ico_step.png') no-repeat center/contain;}
+.reservation_wrap .step_list > li span {position: absolute; left: 50%; top: 0; width: 161px; height: 53px; line-height: 53px; transform: translateX(-50%); border-radius: 0 0 30px 30px; background-color: #4ec4c8; color: #fff; font-size: 20px; font-weight: 500;}
+.reservation_wrap .step_list > li:nth-child(2) span {background-color: #5dbc9b;}
+.reservation_wrap .step_list > li:nth-child(3) span {background-color: #99c64d;}
+.reservation_wrap .step_list > li:nth-child(4) span {background-color: #d3d000;}
+.reservation_wrap .step_list > li p {display: inline-block; margin-top: 25px; vertical-align: middle; font-size: 23px; font-weight: 500; color: #363636;}
+.reservation_wrap .btn_box .write_btn {background-color: #d3d000;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:1200px) {
@@ -174,6 +282,11 @@
     .sub_top_txt.type2 .t1 {display: none;}
     .sub_top_txt.type2 .t2 {padding: 0 20px; text-align: center; font-size: 18px;}
 
+    .tab3 > li {width: calc(33.33% - 0.66px); margin-right: 1px;}
+    .tab3 > li > a {height: 76px; font-size: 20px;}
+
+    .sch_box {text-align: center;}
+
 
     /* hospital_news_wrap */
     .hospital_news_wrap {padding: 0 20px;}
@@ -189,11 +302,18 @@
     .news_list > li .txt_box .t3 {font-size: 10px;}
 
 
-    /* board_wrap */
+    /* board */
     .board_wrap {margin-top: -1px; position: relative;}
     .board_list {border-top-width: 18px;}
     .board_list thead {height: 90px;}
     .board_list th, .board_list td {font-size: 18px;}
+    .board_list th .pc_hide {display: inline-block;}
+    .board_list td.lock, .board_list td.unlock {display: none;}
+    .board_list td.lock + td.tit a {padding-left: 27px; position: relative;}
+    .board_list td.lock + td.tit a::before {display: inline-block; content:''; position: absolute; left: 0; top: 0; width: 24px; height: 25px; background: url('../images/reservation/ico_lock.png') no-repeat center/contain;}
+    .board_list td.unlock + td.tit a {padding-left: 27px; position: relative;}
+    .board_list td.unlock + td.tit a::before {display: inline-block; content:''; position: absolute; left: 0; top: 0; width: 24px; height: 25px; background: url('../images/reservation/ico_unlock.png') no-repeat center/contain;}
+    
     .board_view .board_view_top .tit {padding: 31px 40px;}
     .board_view .board_view_top .tit::after {display: none;}
     .board_view .board_view_top .tit p {font-size: 18px;}
@@ -201,7 +321,12 @@
     .board_view .board_view_top .info {padding: 14px 40px;}
     .board_view .board_view_top .info .each {font-size: 13px; margin-right: 40px;}
     .board_view .board_view_con {padding: 40px;}
-    .board_view .board_btn_box {float: none; margin-right: 0; text-align: center;}    
+    .board_view .board_btn_box {float: none; margin-right: 0; text-align: center;}
+
+    .board_write .board_write_info dl {padding: 60px 40px 30px;}
+    .board_write .board_write_info dl dd input[type="text"] {width: 100% !important;}
+    .board_write .board_write_info dl dd .lock_check {margin-left: 0; margin-top: 14px;}
+    .board_write .board_write_content {padding: 40px;}
 
 
     /* mission_vision_wrap */
@@ -252,6 +377,35 @@
     .greetings_wrap .t2 {font-size: 18px; line-height: 1.4em;}
     .greetings_wrap .left {float: none; display: inline-block; width: auto; margin-top: 35px;}
     .greetings_wrap .right {float: none; width: 100%; padding-left: 0; padding-top: 0; text-align: left;}
+
+
+    /* reservation_wrap */
+    .reservation_wrap {margin-top: 0;}
+    .reservation_wrap .top_txt {display: none;}
+    .reservation_wrap .info_box {display: block; width: 519px; margin: 0 auto; padding: 0; border: none;}
+    .reservation_wrap .info_box > div {display: block; width: 100%; padding: 60px 0;}
+    .reservation_wrap .info_box > div .ico {top: 60px; width: 89px;}
+    .reservation_wrap .info_box > div .t1 {font-size: 23px;}
+    .reservation_wrap .info_box > div .t2 {font-size: 56px;}
+    .reservation_wrap .info_box > div .t3 {font-size: 18px;}
+    .reservation_wrap .info_box > div .t4 {font-size: 28px;}
+    .reservation_wrap .info_box > div .t4 span {font-size: 23px;}
+    .reservation_wrap .info_box .left {padding-left: 150px; border-right: none; border-bottom: 2px solid #cecece;}
+    .reservation_wrap .info_box .left .ico {left: 40px;}
+    .reservation_wrap .info_box .right {padding-left: 150px;}
+    .reservation_wrap .info_box .right .ico {left: 40px;}
+    .reservation_wrap .bg_box {padding: 65px 30px;}
+    .reservation_wrap .bg_box .t1 {font-size: 25px; text-align: center; word-break: keep-all;}
+    .reservation_wrap .bg_box .square_list > li {padding-left: 20px; font-size: 18px;}
+    .reservation_wrap .bg_box .square_list > li::before {top: 6px;}
+    .reservation_wrap .btn_box .naver_btn, .reservation_wrap .btn_box .write_btn {width: 439px;}
+    .reservation_wrap .step_list {margin-top: 65px; padding: 0 56px;}
+    .reservation_wrap .step_list > li {float: none; width: 100%; height: 61px; margin-right: 0; margin-bottom: 38px; padding-left: 180px; border-radius: 12px; text-align: left;}
+    .reservation_wrap .step_list > li::after {left: 50%; top: 100%; width: 25px; height: 14px; margin-left: -12.5px; margin-top: 13px; background-image: url('../images/reservation/ico_step_mo.png');}
+    .reservation_wrap .step_list > li:last-child {margin-bottom: 0;}
+    .reservation_wrap .step_list > li span {left: 0; width: 157px; height: 100%; border-radius: 8px 0 0 8px; transform: none; text-align: center;}
+    .reservation_wrap .step_list > li p {margin-top: 0; font-size: 20px;}
+    .reservation_wrap .board_list {border-top-width: 8px;}
 }
 
 @media screen and (max-width:640px) {
@@ -264,6 +418,14 @@
     .sub_top_txt.type2 .t2 {font-size: 15px; font-weight: 400;}
 
     .btn_box .more_btn {width: 180px; height: 44px; line-height: 40px; font-size: 14px;}
+    .tab3 > li > a {line-height: 1.2; height: 50px; font-size: 15px; padding: 0 10px; word-break: keep-all;}
+
+    .sch_box {padding: 0 10px; margin-top: 30px;}
+    .sch_box > div {font-size: 0;}
+    .sch_box select {width: 25%; min-width: inherit; height: 35px; font-size: 14px; margin-right: 1%;}
+    .sch_box label {width: 74%;}
+    .sch_box input {width: 100%; height: 35px; padding-right: 80px; font-size: 14px;}
+    .sch_box .sch_btn {right: 0; width: 70px; height: 35px; padding-left: 30px; font-size: 14px; background-position: 10px center; background-size: 15px 15px;}
 
 
     /* hospital_news_wrap */
@@ -280,19 +442,40 @@
     .news_list > li .txt_box .t2 br {display: none;}
 
     
-    /* board_wrap */
+    /* board */
     .board_list {border-top-width: 10px;}
     .board_list thead {height: 60px;}
     .board_list tbody td {height: 50px;}
-    .board_list th, .board_list td {font-size: 14px;}
+    .board_list td.lock + td.tit a, .board_list td.unlock + td.tit a {padding-left: 20px;}
+    .board_list td.lock + td.tit a::before, .board_list td.unlock + td.tit a::before {width: 16px; height: 17px; top: 1px;}
+    .board_list th, .board_list td {font-size: 14px;}    
+    
     .pagination {margin-top: 30px;}
     .pagination a {font-size: 14px; margin: 0 6px;}
     .pagination a.page_arrow {width: 10px;}
+    
     .board_view .board_view_top .tit {padding: 29px 20px;}
     .board_view .board_view_top .tit p {font-size: 15px;}
     .board_view .board_view_top .info {padding: 10px 20px;}
     .board_view .board_view_con {padding: 20px;}
     .board_view .board_btn_box a {width: 80px; height: 32px; line-height: 30px; border-radius: 7px; font-size: 14px;}
+    
+    .board_write .board_write_info dl {padding: 40px 20px 15px;}
+    .board_write .board_write_info dl dt {width: 80px; margin-top: 5px; font-size: 15px; margin-bottom: 15px; word-spacing: 3px;}
+    .board_write .board_write_info dl dd {width: calc(100% - 80px); margin-bottom: 15px;}
+    .board_write .board_write_info dl dd input[type="text"] {height: 35px; padding: 0 10px; font-size: 15px;}
+    .board_write .board_write_info dl dd .lock_check {margin-top: 10px; font-size: 15px;}
+    .board_write .board_write_info dl dd .lock_check input[type="checkbox"] {width: 20px; height: 20px; margin-left: 5px;}
+    .board_write .board_write_content {padding: 20px;}
+    .board_write .board_write_content .bd_box textarea {height: 300px; padding: 25px 40px; font-size: 14px;}
+    .board_write .board_write_content .bd_box .security_num {padding: 15px 0;}
+    .board_write .board_write_content .bd_box .security_num .num {padding-right: 10px; font-size: 15px;}
+    .board_write .board_write_content .bd_box .security_num input {width: 100px; height: 35px; font-size: 15px;}
+    .board_write .board_write_content .bd_box .security_num .txt {padding-left: 10px; font-size: 13px;}
+    .board_write .board_write_content .agree_box label {font-size: 14px;}
+    .board_write .board_write_content .agree_box label input[type="checkbox"] {width: 18px; height: 18px;}
+    .board_write .board_write_content .agree_box .more_btn {width: 90px; font-size: 12px;}
+    .board_write .btn_box a {width: 100px; height: 40px; line-height: 38px; font-size: 14px;}
 
 
     /* mission_vision_wrap */
@@ -333,12 +516,42 @@
     .greetings_wrap .t1 small {font-size: 20px;}
     .greetings_wrap .t2 {font-size: 14px;}
     .greetings_wrap .left {margin-top: 20px;}
+
+
+    /* reservation_wrap */
+    .reservation_wrap .info_box {width: 100%; padding: 0 20px; border: none;}
+    .reservation_wrap .info_box > div {padding: 40px 0;}
+    .reservation_wrap .info_box > div .ico {top: 40px; width: 50px;}
+    .reservation_wrap .info_box > div .t1 {font-size: 16px;}
+    .reservation_wrap .info_box > div .t2 {font-size: 35px;}
+    .reservation_wrap .info_box > div .t3 {font-size: 14px; margin-top: 15px;}
+    .reservation_wrap .info_box > div .t4 {font-size: 18px;}
+    .reservation_wrap .info_box > div .t4 span {font-size: 16px; word-spacing: 10px;}
+    .reservation_wrap .info_box .left {padding-left: 60px; padding-right: 10px;}
+    .reservation_wrap .info_box .left .ico {left: 0;}
+    .reservation_wrap .info_box .right {padding-left: 60px; padding-right: 10px;}
+    .reservation_wrap .info_box .right .ico {left: 0;}
+    .reservation_wrap .bg_box {padding: 40px 20px;}
+    .reservation_wrap .bg_box .t1 {font-size: 16px; margin-bottom: 30px;}
+    .reservation_wrap .bg_box .square_list > li {padding-left: 16px; font-size: 14px;}
+    .reservation_wrap .bg_box .square_list > li::before {top: 5px; width: 9px; height: 10px;}
+    .reservation_wrap .btn_box {margin-top: 30px;}
+    .reservation_wrap .btn_box .naver_btn, .reservation_wrap .btn_box .write_btn {width: 240px; height: 50px; line-height: 50px; font-size: 16px;}
+    .reservation_wrap .step_list {margin-top: 30px; padding: 0 20px;}
+    .reservation_wrap .step_list > li {padding-left: 100px; padding-right: 20px; margin-bottom: 30px; font-size: 0;}
+    .reservation_wrap .step_list > li::after {width: 15px; margin-top: 10px;}
+    .reservation_wrap .step_list > li span {width: 80px; font-size: 15px;}
+    .reservation_wrap .step_list > li p {font-size: 15px;}
+    .reservation_wrap .board_list td.num, .reservation_wrap .board_list td.writer {font-size: 12px;}
 }
 
 @media screen and (max-width:480px) {
     /* sub common */
     .sub_top_txt.type2 .t2 {word-break: keep-all;}
     .sub_top_txt.type2 .t2 br {display: none;}
+
+    /* board */
+    .board_write .board_write_content .bd_box .security_num .txt {display: block; margin-top: 10px; padding-left: 0;}
 
     /* mission_vision_wrap */
     .mission_vision_wrap .t2 {word-break: keep-all;}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset=UTF-8">
+    <link rel="canonical" href="http://페이지 주소">
+    <meta name="description" content="웹페이지 설명 작성"/>
+    <meta name="keywords" content="키워드, 키워드..." />
+    <meta name="author" content="페이지 작성자" />
+    <meta name="copyright" content="저작권자" />
+    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="All" /> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>세솟는병원</title>
+    <link rel="stylesheet" href="../../assets/css/default.css">
+    <link rel="stylesheet" href="../../assets/css/sub.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script> 
+    <![endif]-->
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <dl class="skip_navi">
+                <dt class="blind"><strong>바로가기 메뉴</strong></dt>
+                <dd><a href="#content">본문 바로가기</a></dd>
+                <dd><a href="#gnb">주메뉴 바로가기</a></dd>
+            </dl>
+
+            <div class="gnb_header">
+                <div class="container clearfix">
+                    <h1 class="logo"><a href="#"><img src="../../assets/images/common/head_logo.png" alt="세솟는병원"></a></h1>
+                    <div class="gnb_box">
+                        <div class="m_gnb_top">
+                            <div class="login_box">
+                                <a href="#">로그인</a>
+                                <a href="#">회원가입</a>
+                            </div>
+                            <div class="info_box">
+                                <a href="#"><span class="ico01"></span>온라인 상담</a>
+                                <a href="#"><span class="ico02"></span><small>예약전화</small> 1577-3631</a>
+                            </div>
+                            <button type="button" class="m_gnb_close"><img src="../../assets/images/common/m_ico_gnb_close.png" alt=""></button>
+                        </div>
+                        <ul id="gnb" class="gnb">
+                            <li>
+                                <a href="../aboutUs/mission-vision.html">병원소개</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../aboutUs/history.html">병원 역사</a></li>
+                                    <li><a href="../aboutUs/greetings.html">인사말</a></li>
+                                    <li><a href="../aboutUs/mission-vision.html">미션 & 비젼</a></li>
+                                    <li><a href="../aboutUs/medical-staff.html">의료진 소개</a></li>
+                                    <li><a href="../aboutUs/floor.html">층별 안내</a></li>
+                                    <li><a href="../aboutUs/symbol.html">병원CI</a></li>
+                                    <li><a href="../aboutUs/ourmap.html">찾아오시는 길</a></li>
+                
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../medicalGuidance/ward-room-guide.html">진료안내</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../medicalGuidance/ward-room-guide.html">병실생활안내</a></li>
+                                    <li><a href="../medicalGuidance/document-issuance-information.html">서류발급안내</a></li>
+                                    <li><a href="../medicalGuidance/admission-discharge.html">입퇴원안내</a></li>
+                                    <li><a href="../medicalGuidance/timetable.html">진료시간표</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../spineCenter/waist-clinic.html">척추센터</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../spineCenter/waist-clinic.html">허리클리닉</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../rehabilitation/gymtherapy.html">재활치료</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../rehabilitation/gymtherapy.html">운동치료</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../radiology/ultrasoundtest.html">영상의학</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../radiology/ultrasoundtest.html">초음파치료</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../community/hospital-news.html">커뮤니티</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../community/hospital-news.html">병원소식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../reservation/reservation.html">상담예약</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="../reservation/reservation.html">진료예약안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- [D] m_gnb안에 들어가는 항목은 js에서 작업 -->
+                        <ul id="mgnb" class="m_gnb"></ul>
+                        <span class="m_logo"><img src="../../assets/images/common/m_gnb_logo.png" alt="세솟는병원"></span>
+                        <div class="util_btn_box">
+                            <a href="#" class="service_btn">For Foreigners Medical Service</a>
+                            <a href="#" class="login_btn">로그인</a>
+                        </div>
+                    </div>
+                    <button type="button" class="m_gnb_open"><img src="../../assets/images/common/m_ico_gnb_open.png" alt=""></button>
+                </div>
+            </div>
+        </header>
+        <!-- // header -->
+
+        <!-- content -->
+        <div id="content">
+            <!-- sub_top_txt -->
+            <div class="sub_top_txt">
+                <a href="#" class="back_btn pc_hide"><img src="../../assets/images/common/ico_back.png" alt=""></a>
+                <h2>
+                    <span class="eng">Sesonneun Orthopedic Hospital</span>
+                    <span class="kor">게시판</span>
+                </h2>
+            </div>
+            <!-- // sub_top_txt -->
+            <div class="reservation_wrap">
+                <div class="container">
+                    <ul class="tab3">
+                        <li><a href="../reservation/reservation.html">진료 예약 안내</a></li>
+                        <li><a href="../reservation/reservation_naver.html">네이버 온라인 예약</a></li>
+                        <li class="active"><a href="../reservation/reservation_online.html">온라인 상담</a></li>
+                    </ul>
+                    <div class="tab_con">
+                        <div class="top_txt">
+                            <p class="title">온라인 상담</p>
+                            <p class="txt">전문의에게 궁금한 모든 것을 물어보세요!</p>
+                        </div>
+                        <div class="bg_box">
+                            <p class="t1">진료 중 미처 물어보지 못하셨거나 궁굼하신 사항이 있으시면<br>
+                                어떠한 내용이라도 친절하고 자세하게 상담하여 드립니다.</p>
+                            <ul class="square_list">
+                                <li>세솟는정형외과병원 회원가입을 하셔야만 이용할 수 있습니다.</li>
+                                <li>본인의 의사에 따라 상담내용을 공개와 비공개로 선택하실 수 있습니다.</li>
+                                <li>본 상담은 직접적인 진찰 없이 상담자 개인적인 설명에 의하여 이루어지므로 정확한 의료판단이 이루어지지 않을 수 있습니다.</li>
+                                <li>양질의 상담 서비스를 위해 의사선생님별 일일 상담건수를 제한하고 있습니다.</li>
+                            </ul>
+                        </div>
+                        <form action="" class="sch_box">
+                            <div>
+                                <select name="" id="">
+                                    <option value="">제목</option>
+                                </select>
+                                <label><input type="text" name="" id="" placeholder="검색할 내용을 입력하세요"></label>
+                                <button type="button" class="sch_btn">검색</button>
+                            </div>
+                        </form>
+                        <table class="board_list">
+                            <caption>번호, 제목, 작성일이 나타나 있는 목록</caption>
+                            <colgroup>
+                                <col style="width: 15%;">
+                                <col style="width: 10%;" class="m_hide">
+                                <col style="width: auto;">
+                                <col style="width: 20%;">
+                                <col style="width: 10%;" class="m_hide">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col" class="m_hide">공개</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">작성자<span class="pc_hide"> / 작성일</span></th>
+                                    <th scope="col" class="m_hide">작성일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- [D] 비공개글 : 2번째 td에 lock 클래스  -->
+                                <tr>
+                                    <td class="num">13459</td>
+                                    <td class="lock"><i></i></td>
+                                    <td class="tit"><a href="#" class="dotdot1">코로나 예방법 문의 입니다.</a></td>
+                                    <td class="writer">o23lalala<span class="pc_hide">2022.05.30</span></td>
+                                    <td class="date m_hide">2022.05.30</td>
+                                </tr>
+                                <!-- [D] 공개글 : 2번째 td에 unlock 클래스 -->
+                                <tr>
+                                    <td class="num">13458</td>
+                                    <td class="unlock"><i></i></td>
+                                    <td class="tit"><a href="#" class="dotdot1">왼쪽 허리 통증이 지속 되어서 문의드립니다.</a></td>
+                                    <td class="writer">namjunS2<span class="pc_hide">2022.05.30</span></td>
+                                    <td class="date m_hide">2022.05.30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <a href="#" class="page_arrow2 prev"><img src="../../assets/images/common/ico_page_arrow_prev02.png" alt="이전 10페이지"></a>
+                            <a href="#" class="page_arrow prev"><img src="../../assets/images/common/ico_page_arrow_prev.png" alt="이전"></a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#">10</a>
+                            <a href="#" class="page_arrow next"><img src="../../assets/images/common/ico_page_arrow_next.png" alt="다음"></a>
+                            <a href="#" class="page_arrow2 next"><img src="../../assets/images/common/ico_page_arrow_next02.png" alt="다음 10페이지"></a>
+                        </div>
+                        <div class="btn_box">
+                            <a href="../reservation/reservation_write.html" class="write_btn">주치의 온라인 상담하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // content -->
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="container clearfix">
+                <span class="logo"><img src="../../assets/images/common/foot_logo.png" alt=""></span>
+                <p class="tel_box">대표전화 <strong>1577-3631</strong></p>
+                <ul class="info_list">
+                    <li>04109 서울특별시 마포구 백범로 26 (신수동 81-101)</li>
+                    <li>대표 안영준</li>
+                    <li>사업자등록번호 501-31-30563</li>
+                    <li>이메일 : ssnosh@naver.com</li>
+                </ul>
+                <ul class="link_list">
+                    <li><a href="#">개인정보 취급방침</a></li>
+                    <li><a href="#">비급여고시</a></li>
+                    <li><a href="#">환자의 권리 및 의무</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- // footer -->
+    </div>
+    <!-- // wrap -->
+</body>
+</html>

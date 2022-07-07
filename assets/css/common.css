@@ -7,7 +7,6 @@ img {max-width: 100%;}
 .container {max-width: 1280px; margin: 0 auto;}
 .clearfix:after{display:block; content: ''; clear:both; height:0; font-size:0; visibility:hidden;}
 .blind{position:absolute; top:0; left:0; width:1px; height:1px; font-size:0; line-height:0; overflow:hidden;}
-.m_hide {display: block;}
 .pc_hide {display: none;}
 
 
