@@ -70,7 +70,7 @@ img {max-width: 100%;}
 
 @media screen and (max-width:1200px) {
     /* common */
-    .m_hide {display: none;}
+    .m_hide {display: none !important;}
     .pc_hide {display: block;}
 
 

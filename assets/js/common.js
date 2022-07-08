@@ -47,4 +47,13 @@ $(function(){
         
     });
     $(window).scroll();
+
+    $(".scroll_tab > li > a").on("click", function(){
+        var num = $(this).attr("data-item-num");
+        var move = $(".tab_con").find("." + num).offset().top - $("#header .gnb_header").height();
+        $("html, body").animate({
+            scrollTop: move
+        }, 500);
+        return false;
+    });
 });

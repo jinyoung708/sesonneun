@@ -25,6 +25,21 @@
 .btn_box {margin-top: 50px; text-align: center;}
 .btn_box .more_btn {display: inline-block; width: 269px; height: 62px; line-height: 58px; border: 2px solid #d1d3d4; border-radius: 62px; font-size: 17px; color: #acacac;}
 
+.tab_box {position: relative; padding-top: 231px;}
+.tab_box .bg {position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 0 center; background-size: cover;}
+.tab_box .container {position: relative; z-index: 1;}
+.tab_box .container::after {display: block; content:''; width: 100%; height: 85px; background-color: #fff;}
+.tab1 {font-size: 0; overflow: hidden;}
+.tab1 > li {display: table; width: 50%; height: 71px; border-right: 1px solid rgba(255,255,255,0.5); float: left; background-color: rgba(211,208,0,0.7);}
+.tab1 > li:last-child {border-right: 0;}
+.tab1 > li > a {display: table-cell; color: #fff; font-size: 20px; text-align: center; vertical-align: middle;}
+
+.tab2 {margin-top: 7px; overflow: hidden; font-size: 0; padding: 0 52px;}
+.tab2 > li {display: table; float: left; width: calc(20% - 12px); height: 56px; border: 1px solid #d3d000; border-radius: 56px; margin-right: 15px;}
+.tab2 > li:nth-child(5n) {margin-right: 0;}
+.tab2 > li:nth-child(n+6) {margin-top: 14px;}
+.tab2 > li > a {display: table-cell; vertical-align: middle; text-align: center; font-size: 20px; font-weight: 500;}
+
 .tab3 {font-size: 0; overflow: hidden;}
 .tab3 > li {display: table; width: calc(33.33% - 2px); margin-right: 3px; float: left; background-color: #acacac;}
 .tab3 > li.active {background-color: #d3d000;}
@@ -199,10 +214,12 @@
 .ourmap_wrap .transport_box .subway_list > li span.bd_color2 {border-color: #66c1c7;}
 .ourmap_wrap .transport_box .subway_list > li span.bd_color3 {border-color: #a33bc5;}
 .ourmap_wrap .transport_box .bus_list > li {margin-bottom: 20px; font-size: 23px;}
+.ourmap_wrap .transport_box .bus_list > li:last-child {margin-bottom: 0;}
 .ourmap_wrap .transport_box .bus_list > li b {font-weight: 500;}
 .ourmap_wrap .transport_box .bus_list > li b img {margin-right: 3px; margin-top: -10px; vertical-align: middle;}
 .ourmap_wrap .transport_box .bus_list > li .t2 {margin-top: 20px; padding-left: 10px;}
 .ourmap_wrap .transport_box .car_list > li {margin-bottom: 20px; font-size: 23px;}
+.ourmap_wrap .transport_box .car_list > li:last-child {margin-bottom: 0;}
 .ourmap_wrap .transport_box .car_list > li b {font-weight: 500;}
 .ourmap_wrap .transport_box .car_list > li b img {margin-right: 3px; margin-top: -8px; vertical-align: middle;}
 .ourmap_wrap .transport_box .car_list > li .t2 {margin-top: 20px; padding-left: 10px;}
@@ -254,11 +271,17 @@
 .reservation_wrap .btn_box .write_btn {background-color: #d3d000;}
 
 
-
-
-
-
-
+/* waist_clinic_wrap */
+.waist_clinic_wrap .tab_con {margin-top: 120px;}
+.waist_clinic_wrap .tab_con > div {padding: 70px 0; border-bottom: 1px solid #48d5ec;}
+.waist_clinic_wrap .tab_con > div:first-child {padding-top: 0;}
+.waist_clinic_wrap .tab_con .eng {color: #d3d000; font-size: 20px; font-weight: 300; text-align: center;}
+.waist_clinic_wrap .tab_con .kor {margin-bottom: 35px; color: #363636; font-size: 50px; font-weight: 700; text-align: center;}
+.waist_clinic_wrap .tab_con .bd_box {line-height: 1.5em; margin-bottom: 45px; padding: 30px; border: 1px solid #d3d000; background-color: #f2f4f3; color: #707070; font-size: 20px; text-align: center; word-break: keep-all;}
+.waist_clinic_wrap .tab_con .tit {position: relative; padding-left: 40px; margin-bottom: 30px; font-size: 23px; font-weight: 500;}
+.waist_clinic_wrap .tab_con .tit::before {display: inline-block; content:''; position: absolute; left: 0; top: 5px; width: 25px; height: 25px; background-color: #d3d000;}
+.waist_clinic_wrap .tab_con .txt {line-height: 1.478em; font-size: 23px; font-weight: 300; word-break: keep-all; text-align: justify;}
+.waist_clinic_wrap .tab_con .txt + .tit {margin-top: 45px;}
 
 
 
@@ -282,7 +305,22 @@
     .sub_top_txt.type2 .t1 {display: none;}
     .sub_top_txt.type2 .t2 {padding: 0 20px; text-align: center; font-size: 18px;}
 
-    .tab3 > li {width: calc(33.33% - 0.66px); margin-right: 1px;}
+    .tab_box {padding-top: 90px;}
+    .tab_box .bg {height: 128px;}
+    .tab_box .container {padding: 0 20px;}
+    .tab_box .container::after {display: none;}
+
+    .tab1 > li {height: 67px; background-color: #d3d000;}
+
+    .tab2 {margin-top: 9px; padding: 0 20px;}
+    .tab2 > li {width: calc(33.33% - 3px); margin-right: 3px; border-radius: 0;}
+    .tab2 > li:nth-child(5n) {margin-right: 3px;}
+    .tab2 > li:nth-child(3n) {margin-right: 0;}
+    .tab2 > li:nth-child(3n + 1) {clear: both;}
+    .tab2 > li:nth-child(n+4) {margin-top: 3px;}
+    .tab2 > li > a {font-size: 16px; font-weight: 400;}
+
+    .tab3 > li {width: calc(33.33% - 0.66px); height: 46px; margin-right: 1px;}
     .tab3 > li > a {height: 76px; font-size: 20px;}
 
     .sch_box {text-align: center;}
@@ -406,6 +444,46 @@
     .reservation_wrap .step_list > li span {left: 0; width: 157px; height: 100%; border-radius: 8px 0 0 8px; transform: none; text-align: center;}
     .reservation_wrap .step_list > li p {margin-top: 0; font-size: 20px;}
     .reservation_wrap .board_list {border-top-width: 8px;}
+
+    
+    /* ourmap_wrap */
+    .ourmap_wrap .map_box {margin-top: 0; margin-bottom: 60px;}
+    .ourmap_wrap .map_contact_box {display: block; height: auto; padding: 25px;}
+    .ourmap_wrap .map_contact_box .each {display: block; margin-bottom: 10px; text-align: center; font-size: 18px;}
+    .ourmap_wrap .map_contact_box .each:last-child {margin-bottom: 0;}
+    .ourmap_wrap .map_contact_box .each img {margin-right: 5px; margin-top: -4px;}
+    .ourmap_wrap .map_contact_box .each .ico01 {width: 18px;}
+    .ourmap_wrap .map_contact_box .each .ico02 {width: 16px;}
+    .ourmap_wrap .title {padding-left: 20px; font-size: 23px;}
+    .ourmap_wrap .transport_box .each .left {width: 197px;}
+    .ourmap_wrap .transport_box .each .left p {width: 140px; height: 33px; line-height: 33px; padding-left: 0; font-size: 16px; letter-spacing: -0.045em;}
+    .ourmap_wrap .transport_box .each .left p img {position: static; margin-top: -4px; margin-right: 5px; vertical-align: middle; transform: none;}
+    .ourmap_wrap .transport_box .each .left p .ico01 {width: 16px; margin-left: 14px;}
+    .ourmap_wrap .transport_box .each .left p .ico02 {width: 18px; margin-left: 18px;}
+    .ourmap_wrap .transport_box .each .left p .ico03 {width: 15px; margin-left: 16px;}
+    .ourmap_wrap .transport_box .each .right {padding: 20px 0;}
+    .ourmap_wrap .transport_box .subway_list > li {margin-bottom: 10px; font-size: 13px;}
+    .ourmap_wrap .transport_box .subway_list > li span {height: 20px; line-height: 13px; padding: 0 10px; border-width: 3px;}
+    .ourmap_wrap .transport_box .bus_list > li {margin-bottom: 15px; font-size: 13px;}
+    .ourmap_wrap .transport_box .bus_list > li b img {width: 13px; margin-top: -5px;}
+    .ourmap_wrap .transport_box .bus_list > li .t2 {margin-top: 10px;}
+    .ourmap_wrap .transport_box .car_list > li {margin-bottom: 15px; font-size: 13px;}
+    .ourmap_wrap .transport_box .car_list > li b img {width: 15px; margin-top: -5px;}
+    .ourmap_wrap .transport_box .car_list > li .t2 {margin-top: 10px;}
+    .ourmap_wrap .transport_box .car_list > li .t2 small {margin: 10px 0 20px; padding-left: 15px; font-size: 12px;}
+    .ourmap_wrap .transport_box .car_list > li .num_list > li {margin-top: 10px; padding-left: 15px;}
+
+    
+    /* waist_clinic_wrap */
+    .waist_clinic_wrap .tab_con {margin-top: 40px;}
+    .waist_clinic_wrap .tab_con > div {padding: 40px;}
+    .waist_clinic_wrap .tab_con .eng {display: none;}
+    .waist_clinic_wrap .tab_con .kor {margin-bottom: 15px; font-size: 23px;}
+    .waist_clinic_wrap .tab_con .bd_box {border: none; margin-bottom: 25px; padding: 25px; font-size: 18px;}
+    .waist_clinic_wrap .tab_con .tit {margin-bottom: 15px; padding-left: 21px; font-size: 18px;}
+    .waist_clinic_wrap .tab_con .tit::before {width: 17px; height: 17px;}
+    .waist_clinic_wrap .tab_con .txt {font-size: 16px;}
+    .waist_clinic_wrap .tab_con .txt + .tit {margin-top: 25px;}
 }
 
 @media screen and (max-width:640px) {
@@ -418,6 +496,16 @@
     .sub_top_txt.type2 .t2 {font-size: 15px; font-weight: 400;}
 
     .btn_box .more_btn {width: 180px; height: 44px; line-height: 40px; font-size: 14px;}
+
+    .tab_box {padding-top: 80px;}
+    .tab_box .bg {height: 108px;}
+
+    .tab1 > li {height: 47px;}
+    .tab1 > li > a {font-size: 16px;}
+
+    .tab2 > li {height: 40px;}
+    .tab2 > li > a {font-size: 14px;}
+
     .tab3 > li > a {line-height: 1.2; height: 50px; font-size: 15px; padding: 0 10px; word-break: keep-all;}
 
     .sch_box {padding: 0 10px; margin-top: 30px;}
@@ -543,6 +631,20 @@
     .reservation_wrap .step_list > li span {width: 80px; font-size: 15px;}
     .reservation_wrap .step_list > li p {font-size: 15px;}
     .reservation_wrap .board_list td.num, .reservation_wrap .board_list td.writer {font-size: 12px;}
+
+
+    /* ourmap_wrap */
+    .ourmap_wrap .map_contact_box .each {font-size: 15px;}
+    .ourmap_wrap .title {font-size: 17px;}
+
+
+    /* waist_clinic_wrap */
+    .waist_clinic_wrap .tab_con > div {padding: 40px 20px;}
+    .waist_clinic_wrap .tab_con .kor {font-size: 17px;}
+    .waist_clinic_wrap .tab_con .bd_box {padding: 20px; font-size: 15px;}
+    .waist_clinic_wrap .tab_con .tit {font-size: 16px;}
+    .waist_clinic_wrap .tab_con .tit::before {width: 14px; height: 14px; top: 6px;}
+    .waist_clinic_wrap .tab_con .txt {font-size: 14px;}
 }
 
 @media screen and (max-width:480px) {
@@ -561,4 +663,10 @@
     .mission_vision_wrap .vision .right {float: none; width: 100%; padding: 0 20px;}
     .mission_vision_wrap .vision .right .title {margin-bottom: 30px;}
     .mission_vision_wrap .core_value .left .title {margin-bottom: 30px;}
+
+
+    /* ourmap_wrap */
+    .ourmap_wrap .transport_box .each {display: block;}
+    .ourmap_wrap .transport_box .each .left {display: block; width: 100%; margin-bottom: 20px;}
+    .ourmap_wrap .transport_box .each .right {display: block; padding-left: 20px; padding-right: 20px; border-bottom: 1px solid #969596;}
 }
