@@ -29,13 +29,6 @@ $(function(){
         },
     });
 
-
-    // $(window).on("resize", function(){
-    //     windowW = window.innerWidth;
-        
-    // });
-    // $(window).resize();
-
     $(window).on("scroll", function(){
         pageY = window.pageYOffset;
         if(pageY>=$("#content").offset().top){

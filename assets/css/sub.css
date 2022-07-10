@@ -1075,8 +1075,10 @@
     .sub_top_txt.type2 .t2 {word-break: keep-all;}
     .sub_top_txt.type2 .t2 br {display: none;}
 
+    
     /* board */
     .board_write .board_write_content .bd_box .security_num .txt {display: block; margin-top: 10px; padding-left: 0;}
+
 
     /* mission_vision_wrap */
     .mission_vision_wrap .t2 {word-break: keep-all;}
