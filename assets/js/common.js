@@ -30,11 +30,11 @@ $(function(){
     });
 
 
-    $(window).on("resize", function(){
-        windowW = window.innerWidth;
+    // $(window).on("resize", function(){
+    //     windowW = window.innerWidth;
         
-    });
-    $(window).resize();
+    // });
+    // $(window).resize();
 
     $(window).on("scroll", function(){
         pageY = window.pageYOffset;
